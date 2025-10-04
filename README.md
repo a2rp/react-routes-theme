@@ -1,5 +1,7 @@
 # React Routes Theme
 
+![alt text](image-1.png)
+
 Display-only, premium React routing/theme scaffold with collapsible nav, manual routes, and GH Pages support.
 
 ## Links
