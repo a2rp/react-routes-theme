@@ -1,4 +1,4 @@
-import{d as v,r as m,a as ee,j as e,N as T}from"./index-Be6a9TQd.js";const d="var(--text, #f3f4f6)",N="var(--muted, #a0a0a7)",p="var(--card, #111318)",i="var(--border, #23262d)",r="var(--accent, #5aa9ff)",C="var(--accent-soft, rgba(90,169,255,0.15))",u="var(--danger, #ef4444)",R="var(--radius, 16px)",D="var(--shadow, 0 10px 30px rgba(0,0,0,.35))",j={Page:v.div`
+import{d as v,r as m,a as ee,j as e,N as T}from"./index-RFS3WyFt.js";const d="var(--text, #f3f4f6)",N="var(--muted, #a0a0a7)",p="var(--card, #111318)",i="var(--border, #23262d)",r="var(--accent, #5aa9ff)",C="var(--accent-soft, rgba(90,169,255,0.15))",u="var(--danger, #ef4444)",R="var(--radius, 16px)",D="var(--shadow, 0 10px 30px rgba(0,0,0,.35))",j={Page:v.div`
         padding: 24px 0 64px;
         color: ${d};
         .muted {

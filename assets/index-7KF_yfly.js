@@ -1,4 +1,4 @@
-import{d as x,r as l,j as e,N as A}from"./index-Be6a9TQd.js";const i="var(--text, #f3f4f6)",b="var(--muted, #a0a0a7)",h="var(--card, #111318)",r="var(--border, #23262d)",a="var(--accent, #5aa9ff)",S="var(--accent-soft, rgba(90,169,255,0.15))",y="var(--danger, #ef4444)",$="var(--warn, #f59e0b)",W="var(--radius, 16px)",g={Page:x.div`
+import{d as x,r as l,j as e,N as A}from"./index-RFS3WyFt.js";const i="var(--text, #f3f4f6)",b="var(--muted, #a0a0a7)",h="var(--card, #111318)",r="var(--border, #23262d)",a="var(--accent, #5aa9ff)",S="var(--accent-soft, rgba(90,169,255,0.15))",y="var(--danger, #ef4444)",$="var(--warn, #f59e0b)",W="var(--radius, 16px)",g={Page:x.div`
         padding: 24px 0 64px;
         color: ${i};
     `,Header:x.header`
