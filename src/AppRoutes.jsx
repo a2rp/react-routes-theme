@@ -225,12 +225,13 @@ const NotificationsPage = lazy(() => import('./pages/notifications'));
 
 
 // help and docs
-const HelpPage = lazy(() => import('./pages/placeholder'));
-const FaqPage = lazy(() => import('./pages/placeholder'));
-const ContactPage = lazy(() => import('./pages/placeholder'));
-const FeedbackPage = lazy(() => import('./pages/placeholder'));
-const ChangelogPage = lazy(() => import('./pages/placeholder'));
-const RoadmapPage = lazy(() => import('./pages/placeholder'));
+const HelpPage = lazy(() => import('./pages/help'));
+const FaqPage = lazy(() => import('./pages/faq'));
+const ContactPage = lazy(() => import('./pages/contact'));
+const FeedbackPage = lazy(() => import('./pages/feedback'));
+const ChangelogPage = lazy(() => import('./pages/changelog'));
+const RoadmapPage = lazy(() => import('./pages/roadmap'));
+
 
 /* Print helpers */
 const PrintQuote = lazy(() => import('./pages/placeholder'));
