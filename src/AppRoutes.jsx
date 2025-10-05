@@ -103,12 +103,13 @@ const PurchaseOrderBill = lazy(() => import('./pages/purchase-orders/bill'));
 
 
 /* Shipments */
-const ShipmentsList = lazy(() => import('./pages/placeholder'));
-const ShipmentNew = lazy(() => import('./pages/placeholder'));
-const ShipmentDetail = lazy(() => import('./pages/placeholder'));
-const ShipmentTrack = lazy(() => import('./pages/placeholder'));
-const ShipmentLabels = lazy(() => import('./pages/placeholder'));
-const Carriers = lazy(() => import('./pages/placeholder'));
+const ShipmentsList = lazy(() => import('./pages/shipments/list'));
+const ShipmentNew = lazy(() => import('./pages/shipments/new'));
+const ShipmentDetail = lazy(() => import('./pages/shipments/detail'));
+const ShipmentTrack = lazy(() => import('./pages/shipments/track'));
+const ShipmentLabels = lazy(() => import('./pages/shipments/labels'));
+const Carriers = lazy(() => import('./pages/carriers'));
+
 
 /* Invoices / Receipts / Credit Notes */
 const InvoicesList = lazy(() => import('./pages/placeholder'));
