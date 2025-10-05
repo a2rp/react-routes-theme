@@ -220,8 +220,9 @@ const Reset = lazy(() => import('./pages/auth/reset'));
 const Verify = lazy(() => import('./pages/auth/verify'));
 
 // account
-const ProfilePage = lazy(() => import('./pages/placeholder'));
-const NotificationsPage = lazy(() => import('./pages/placeholder'));
+const ProfilePage = lazy(() => import('./pages/profile'));
+const NotificationsPage = lazy(() => import('./pages/notifications'));
+
 
 // help and docs
 const HelpPage = lazy(() => import('./pages/placeholder'));
