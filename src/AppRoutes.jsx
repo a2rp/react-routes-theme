@@ -213,13 +213,17 @@ const ToolsPlayground = lazy(() => import('./pages/tools/playground'));
 
 
 /* Auth + Account + Help */
-const Login = lazy(() => import('./pages/placeholder'));
-const Register = lazy(() => import('./pages/placeholder'));
-const Forgot = lazy(() => import('./pages/placeholder'));
-const Reset = lazy(() => import('./pages/placeholder'));
-const Verify = lazy(() => import('./pages/placeholder'));
+const Login = lazy(() => import('./pages/auth/login'));
+const Register = lazy(() => import('./pages/auth/register'));
+const Forgot = lazy(() => import('./pages/auth/forgot'));
+const Reset = lazy(() => import('./pages/auth/reset'));
+const Verify = lazy(() => import('./pages/auth/verify'));
+
+// account
 const ProfilePage = lazy(() => import('./pages/placeholder'));
 const NotificationsPage = lazy(() => import('./pages/placeholder'));
+
+// help and docs
 const HelpPage = lazy(() => import('./pages/placeholder'));
 const FaqPage = lazy(() => import('./pages/placeholder'));
 const ContactPage = lazy(() => import('./pages/placeholder'));
