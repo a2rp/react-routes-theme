@@ -206,10 +206,11 @@ const SettingsWebhooks = lazy(() => import('./pages/settings/webhooks'));
 
 
 /* Tools */
-const ToolsImportExport = lazy(() => import('./pages/placeholder'));
-const ToolsSeed = lazy(() => import('./pages/placeholder'));
-const ToolsThemeTokens = lazy(() => import('./pages/placeholder'));
-const ToolsPlayground = lazy(() => import('./pages/placeholder'));
+const ToolsImportExport = lazy(() => import('./pages/tools/importExport'));
+const ToolsSeed = lazy(() => import('./pages/tools/seed'));
+const ToolsThemeTokens = lazy(() => import('./pages/tools/theme-tokens'));
+const ToolsPlayground = lazy(() => import('./pages/tools/playground'));
+
 
 /* Auth + Account + Help */
 const Login = lazy(() => import('./pages/placeholder'));

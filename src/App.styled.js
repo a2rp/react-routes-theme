@@ -55,6 +55,8 @@ const Wrapper = styled.div`
     position: relative;
     background: ${bg};
     color: ${text};
+    height: 100vh;
+    overflow: hidden;
 `;
 
 const Header = styled.div`
