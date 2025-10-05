@@ -112,27 +112,29 @@ const Carriers = lazy(() => import('./pages/carriers'));
 
 
 /* Invoices / Receipts / Credit Notes */
-const InvoicesList = lazy(() => import('./pages/placeholder'));
-const InvoiceNew = lazy(() => import('./pages/placeholder'));
-const InvoiceDetail = lazy(() => import('./pages/placeholder'));
-const InvoiceEdit = lazy(() => import('./pages/placeholder'));
-const InvoicePrint = lazy(() => import('./pages/placeholder'));
-const CreditNotesList = lazy(() => import('./pages/placeholder'));
-const CreditNoteDetail = lazy(() => import('./pages/placeholder'));
-const ReceiptsList = lazy(() => import('./pages/placeholder'));
+const InvoicesList = lazy(() => import('./pages/invoices/list'));
+const InvoiceNew = lazy(() => import('./pages/invoices/new'));
+const InvoiceDetail = lazy(() => import('./pages/invoices/detail'));
+const InvoiceEdit = lazy(() => import('./pages/invoices/edit'));
+const InvoicePrint = lazy(() => import('./pages/print/invoice'));
+const CreditNotesList = lazy(() => import('./pages/invoices/credit-notes'));
+const CreditNoteDetail = lazy(() => import('./pages/invoices/credit-notes/detail'));
+const ReceiptsList = lazy(() => import('./pages/receipts/list'));
+
 
 /* Finance */
-const FinanceOverview = lazy(() => import('./pages/placeholder'));
-const ChartOfAccounts = lazy(() => import('./pages/placeholder'));
-const LedgersList = lazy(() => import('./pages/placeholder'));
-const LedgerDetail = lazy(() => import('./pages/placeholder'));
-const JournalsList = lazy(() => import('./pages/placeholder'));
-const JournalDetail = lazy(() => import('./pages/placeholder'));
-const Taxes = lazy(() => import('./pages/placeholder'));
-const GstReturns = lazy(() => import('./pages/placeholder'));
-const BalanceSheet = lazy(() => import('./pages/placeholder'));
-const ProfitLoss = lazy(() => import('./pages/placeholder'));
-const TrialBalance = lazy(() => import('./pages/placeholder'));
+const FinanceOverview = lazy(() => import('./pages/finance'));
+const ChartOfAccounts = lazy(() => import('./pages/finance/chart-of-accounts'));
+const LedgersList = lazy(() => import('./pages/finance/ledgers'));
+const LedgerDetail = lazy(() => import('./pages/finance/ledgers/detail'));
+const JournalsList = lazy(() => import('./pages/finance/journals'));
+const JournalDetail = lazy(() => import('./pages/finance/journals/detail'));
+const Taxes = lazy(() => import('./pages/finance/taxes'));
+const GstReturns = lazy(() => import('./pages/finance/gst-returns'));
+const BalanceSheet = lazy(() => import('./pages/finance/balanceSheet'));
+const ProfitLoss = lazy(() => import('./pages/finance/profit-loss'));
+const TrialBalance = lazy(() => import('./pages/finance/trial-balance'));
+
 
 /* Manufacturing (optional) */
 const ManufacturingOverview = lazy(() => import('./pages/placeholder'));
