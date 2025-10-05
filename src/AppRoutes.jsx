@@ -137,12 +137,13 @@ const TrialBalance = lazy(() => import('./pages/finance/trial-balance'));
 
 
 /* Manufacturing (optional) */
-const ManufacturingOverview = lazy(() => import('./pages/placeholder'));
-const BomList = lazy(() => import('./pages/placeholder'));
-const BomDetail = lazy(() => import('./pages/placeholder'));
-const WorkOrdersList = lazy(() => import('./pages/placeholder'));
-const WorkOrderDetail = lazy(() => import('./pages/placeholder'));
-const Production = lazy(() => import('./pages/placeholder'));
+const ManufacturingOverview = lazy(() => import('./pages/manufacturing'));
+const BomList = lazy(() => import('./pages/manufacturing/bom'));
+const BomDetail = lazy(() => import('./pages/manufacturing/bom/detail'));
+const WorkOrdersList = lazy(() => import('./pages/manufacturing/work-orders'));
+const WorkOrderDetail = lazy(() => import('./pages/manufacturing/work-orders/detail'));
+const Production = lazy(() => import('./pages/manufacturing/production'));
+
 
 /* Healthcare (optional) */
 const PatientsList = lazy(() => import('./pages/placeholder'));
