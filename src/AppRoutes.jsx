@@ -91,15 +91,16 @@ const Reorder = lazy(() => import('./pages/inventory/reorder'));
 
 
 /* Vendors / Purchasing */
-const VendorsList = lazy(() => import('./pages/placeholder'));
-const VendorNew = lazy(() => import('./pages/placeholder'));
-const VendorDetail = lazy(() => import('./pages/placeholder'));
-const VendorEdit = lazy(() => import('./pages/placeholder'));
-const PurchaseOrdersList = lazy(() => import('./pages/placeholder'));
-const PurchaseOrderNew = lazy(() => import('./pages/placeholder'));
-const PurchaseOrderDetail = lazy(() => import('./pages/placeholder'));
-const PurchaseOrderReceipt = lazy(() => import('./pages/placeholder'));
-const PurchaseOrderBill = lazy(() => import('./pages/placeholder'));
+const VendorsList = lazy(() => import('./pages/vendors/list'));
+const VendorNew = lazy(() => import('./pages/vendors/new'));
+const VendorDetail = lazy(() => import('./pages/vendors/detail'));
+const VendorEdit = lazy(() => import('./pages/vendors/edit'));
+const PurchaseOrdersList = lazy(() => import('./pages/purchase-orders/list'));
+const PurchaseOrderNew = lazy(() => import('./pages/purchase-orders/new'));
+const PurchaseOrderDetail = lazy(() => import('./pages/purchase-orders/detail'));
+const PurchaseOrderReceipt = lazy(() => import('./pages/purchase-orders/receipt'));
+const PurchaseOrderBill = lazy(() => import('./pages/purchase-orders/bill'));
+
 
 /* Shipments */
 const ShipmentsList = lazy(() => import('./pages/placeholder'));
