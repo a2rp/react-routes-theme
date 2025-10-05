@@ -31,59 +31,64 @@ const ExampleUndoRedo = lazy(() => import('./pages/examples/undo-redo'));
 
 
 /* Customers */
-const CustomersList = lazy(() => import('./pages/placeholder'));
-const CustomerNew = lazy(() => import('./pages/placeholder'));
-const CustomerEdit = lazy(() => import('./pages/placeholder'));
-const CustomerDetail = lazy(() => import('./pages/placeholder'));
-const CustomerPrint = lazy(() => import('./pages/placeholder'));
+const CustomersList = lazy(() => import('./pages/customers/list'));
+const CustomerNew = lazy(() => import('./pages/customers/new'));
+const CustomerEdit = lazy(() => import('./pages/customers/edit'));
+const CustomerDetail = lazy(() => import('./pages/customers/detail'));
+const CustomerPrint = lazy(() => import('./pages/customers/print'));
+
 
 /* Sales */
-const SalesOverview = lazy(() => import('./pages/placeholder'));
-const SalesQuotesList = lazy(() => import('./pages/placeholder'));
-const SalesQuoteDetail = lazy(() => import('./pages/placeholder'));
-const SalesReturnsList = lazy(() => import('./pages/placeholder'));
-const SalesReturnDetail = lazy(() => import('./pages/placeholder'));
-const SalesPaymentsList = lazy(() => import('./pages/placeholder'));
-const SalesPaymentDetail = lazy(() => import('./pages/placeholder'));
+const SalesOverview = lazy(() => import('./pages/sales/overview'));
+const SalesQuotesList = lazy(() => import('./pages/sales/quotes'));
+const SalesQuoteDetail = lazy(() => import('./pages/sales/quotes/detail'));
+const SalesReturnsList = lazy(() => import('./pages/sales/returns'));
+const SalesReturnDetail = lazy(() => import('./pages/sales/returns/detail'));
+const SalesPaymentsList = lazy(() => import('./pages/sales/payments'));
+const SalesPaymentDetail = lazy(() => import('./pages/sales/payments/detail'));
+
 
 /* Orders */
-const OrdersList = lazy(() => import('./pages/placeholder'));
-const OrderNew = lazy(() => import('./pages/placeholder'));
-const OrderDetail = lazy(() => import('./pages/placeholder'));
-const OrderEdit = lazy(() => import('./pages/placeholder'));
-const OrderInvoice = lazy(() => import('./pages/placeholder'));
-const OrderPrint = lazy(() => import('./pages/placeholder'));
-const OrderItems = lazy(() => import('./pages/placeholder'));
-const OrderItemDetail = lazy(() => import('./pages/placeholder'));
+const OrdersList = lazy(() => import('./pages/orders/list'));
+const OrderNew = lazy(() => import('./pages/orders/new'));
+const OrderDetail = lazy(() => import('./pages/orders/detail'));
+const OrderEdit = lazy(() => import('./pages/orders/edit'));
+const OrderInvoice = lazy(() => import('./pages/orders/invoice'));
+const OrderPrint = lazy(() => import('./pages/orders/print'));
+const OrderItems = lazy(() => import('./pages/orders/items'));
+const OrderItemDetail = lazy(() => import('./pages/orders/itemDetail'));
+
 
 /* Products / Catalog */
-const ProductsList = lazy(() => import('./pages/placeholder'));
-const ProductNew = lazy(() => import('./pages/placeholder'));
-const ProductDetail = lazy(() => import('./pages/placeholder'));
-const ProductEdit = lazy(() => import('./pages/placeholder'));
-const Brands = lazy(() => import('./pages/placeholder'));
-const Attributes = lazy(() => import('./pages/placeholder'));
-const PriceLists = lazy(() => import('./pages/placeholder'));
-const CategoriesList = lazy(() => import('./pages/placeholder'));
+const ProductsList = lazy(() => import('./pages/products/list'));
+const ProductNew = lazy(() => import('./pages/products/new'));
+const ProductDetail = lazy(() => import('./pages/products/detail'));
+const ProductEdit = lazy(() => import('./pages/products/edit'));
+const Brands = lazy(() => import('./pages/products/brands'));
+const Attributes = lazy(() => import('./pages/products/attributes'));
+const PriceLists = lazy(() => import('./pages/products/price-lists'));
+const CategoriesList = lazy(() => import('./pages/categories/list'));
+
 
 /* Medicines */
-const MedicinesList = lazy(() => import('./pages/placeholder'));
-const MedicineDetail = lazy(() => import('./pages/placeholder'));
-const Manufacturers = lazy(() => import('./pages/placeholder'));
-const Molecules = lazy(() => import('./pages/placeholder'));
-const Forms = lazy(() => import('./pages/placeholder'));
-const Strengths = lazy(() => import('./pages/placeholder'));
-const ExpiryTracker = lazy(() => import('./pages/placeholder'));
-const HsnGst = lazy(() => import('./pages/placeholder'));
+const MedicinesList = lazy(() => import('./pages/medicines'));
+const MedicineDetail = lazy(() => import('./pages/medicines/detail'));
+const Manufacturers = lazy(() => import('./pages/medicines/manufacturers'));
+const Molecules = lazy(() => import('./pages/medicines/molecules'));
+const Forms = lazy(() => import('./pages/medicines/forms'));
+const Strengths = lazy(() => import('./pages/medicines/strengths'));
+const ExpiryTracker = lazy(() => import('./pages/medicines/expiry-tracker'));
+const HsnGst = lazy(() => import('./pages/medicines/hsn-gst'));
 
 /* Inventory */
-const InventoryOverview = lazy(() => import('./pages/placeholder'));
-const Lots = lazy(() => import('./pages/placeholder'));
-const Batches = lazy(() => import('./pages/placeholder'));
-const Adjustments = lazy(() => import('./pages/placeholder'));
-const Transfers = lazy(() => import('./pages/placeholder'));
-const Warehouses = lazy(() => import('./pages/placeholder'));
-const Reorder = lazy(() => import('./pages/placeholder'));
+const InventoryOverview = lazy(() => import('./pages/inventory/overview'));
+const Lots = lazy(() => import('./pages/inventory/lots'));
+const Batches = lazy(() => import('./pages/inventory/batches'));
+const Adjustments = lazy(() => import('./pages/inventory/adjustments'));
+const Transfers = lazy(() => import('./pages/inventory/transfers'));
+const Warehouses = lazy(() => import('./pages/inventory/warehouses'));
+const Reorder = lazy(() => import('./pages/inventory/reorder'));
+
 
 /* Vendors / Purchasing */
 const VendorsList = lazy(() => import('./pages/placeholder'));
