@@ -146,43 +146,46 @@ const Production = lazy(() => import('./pages/manufacturing/production'));
 
 
 /* Healthcare (optional) */
-const PatientsList = lazy(() => import('./pages/placeholder'));
-const PatientDetail = lazy(() => import('./pages/placeholder'));
-const PatientVisits = lazy(() => import('./pages/placeholder'));
-const AppointmentsList = lazy(() => import('./pages/placeholder'));
-const AppointmentDetail = lazy(() => import('./pages/placeholder'));
-const AppointmentCalendar = lazy(() => import('./pages/placeholder'));
-const PrescriptionsList = lazy(() => import('./pages/placeholder'));
-const PrescriptionDetail = lazy(() => import('./pages/placeholder'));
-const LabsList = lazy(() => import('./pages/placeholder'));
-const LabDetail = lazy(() => import('./pages/placeholder'));
-const LabCatalog = lazy(() => import('./pages/placeholder'));
-const ImagingList = lazy(() => import('./pages/placeholder'));
-const ImagingDetail = lazy(() => import('./pages/placeholder'));
+const PatientsList = lazy(() => import('./pages/patients'));
+const PatientDetail = lazy(() => import('./pages/patients/detail'));
+const PatientVisits = lazy(() => import('./pages/patients/visits'));
+const AppointmentsList = lazy(() => import('./pages/appointments'));
+const AppointmentDetail = lazy(() => import('./pages/appointments/detail'));
+const AppointmentCalendar = lazy(() => import('./pages/appointments/calendar'));
+const PrescriptionsList = lazy(() => import('./pages/prescriptions'));
+const PrescriptionDetail = lazy(() => import('./pages/prescriptions/detail'));
+const LabsList = lazy(() => import('./pages/labs'));
+const LabDetail = lazy(() => import('./pages/labs/detail'));
+const LabCatalog = lazy(() => import('./pages/labs/catalog'));
+const ImagingList = lazy(() => import('./pages/imaging'));
+const ImagingDetail = lazy(() => import('./pages/imaging/detail'));
+
 
 /* Reports */
-const ReportsOverview = lazy(() => import('./pages/placeholder'));
-const ReportSales = lazy(() => import('./pages/placeholder'));
-const ReportInventory = lazy(() => import('./pages/placeholder'));
-const ReportCustomers = lazy(() => import('./pages/placeholder'));
-const ReportFinance = lazy(() => import('./pages/placeholder'));
-const ReportProcurement = lazy(() => import('./pages/placeholder'));
-const ReportShipment = lazy(() => import('./pages/placeholder'));
-const ReportGst = lazy(() => import('./pages/placeholder'));
+const ReportsOverview = lazy(() => import('./pages/reports'));
+const ReportSales = lazy(() => import('./pages/reports/sales'));
+const ReportInventory = lazy(() => import('./pages/reports/inventory'));
+const ReportCustomers = lazy(() => import('./pages/reports/customers'));
+const ReportFinance = lazy(() => import('./pages/reports/finance'));
+const ReportProcurement = lazy(() => import('./pages/reports/procurement'));
+const ReportShipment = lazy(() => import('./pages/reports/shipment'));
+const ReportGst = lazy(() => import('./pages/reports/gst'));
+
 
 /* Admin */
-const AdminUsers = lazy(() => import('./pages/placeholder'));
-const AdminUserDetail = lazy(() => import('./pages/placeholder'));
-const AdminRoles = lazy(() => import('./pages/placeholder'));
-const AdminPermissions = lazy(() => import('./pages/placeholder'));
-const AdminAuditLog = lazy(() => import('./pages/placeholder'));
-const AdminActivity = lazy(() => import('./pages/placeholder'));
-const AdminSystemStatus = lazy(() => import('./pages/placeholder'));
-const AdminFeatureFlags = lazy(() => import('./pages/placeholder'));
-const AdminTenants = lazy(() => import('./pages/placeholder'));
-const AdminIntegrations = lazy(() => import('./pages/placeholder'));
-const AdminEmailTemplates = lazy(() => import('./pages/placeholder'));
-const AdminSmsTemplates = lazy(() => import('./pages/placeholder'));
+const AdminUsers = lazy(() => import('./pages/admin/users'));
+const AdminUserDetail = lazy(() => import('./pages/admin/users/detail'));
+const AdminRoles = lazy(() => import('./pages/admin/roles'));
+const AdminPermissions = lazy(() => import('./pages/admin/permissions'));
+const AdminAuditLog = lazy(() => import('./pages/admin/audit-log'));
+const AdminActivity = lazy(() => import('./pages/admin/activity'));
+const AdminSystemStatus = lazy(() => import('./pages/admin/system-status'));
+const AdminFeatureFlags = lazy(() => import('./pages/admin/feature-flags'));
+const AdminTenants = lazy(() => import('./pages/admin/tenants'));
+const AdminIntegrations = lazy(() => import('./pages/admin/integrations'));
+const AdminEmailTemplates = lazy(() => import('./pages/admin/email-templates'));
+const AdminSmsTemplates = lazy(() => import('./pages/admin/sms-templates'));
+
 
 /* Settings */
 const SettingsOverview = lazy(() => import('./pages/placeholder'));
