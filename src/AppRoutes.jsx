@@ -188,21 +188,22 @@ const AdminSmsTemplates = lazy(() => import('./pages/admin/sms-templates'));
 
 
 /* Settings */
-const SettingsOverview = lazy(() => import('./pages/placeholder'));
-const SettingsProfile = lazy(() => import('./pages/placeholder'));
-const SettingsAppearance = lazy(() => import('./pages/placeholder'));
-const SettingsBilling = lazy(() => import('./pages/placeholder'));
-const SettingsBackups = lazy(() => import('./pages/placeholder'));
-const SettingsTokens = lazy(() => import('./pages/placeholder'));
-const SettingsWarehouses = lazy(() => import('./pages/placeholder'));
-const SettingsLocations = lazy(() => import('./pages/placeholder'));
-const SettingsTax = lazy(() => import('./pages/placeholder'));
-const SettingsUnits = lazy(() => import('./pages/placeholder'));
-const SettingsCurrencies = lazy(() => import('./pages/placeholder'));
-const SettingsNumbering = lazy(() => import('./pages/placeholder'));
-const SettingsPrintTemplates = lazy(() => import('./pages/placeholder'));
-const SettingsNotifications = lazy(() => import('./pages/placeholder'));
-const SettingsWebhooks = lazy(() => import('./pages/placeholder'));
+const SettingsOverview = lazy(() => import('./pages/settings'));
+const SettingsProfile = lazy(() => import('./pages/settings/profile'));
+const SettingsAppearance = lazy(() => import('./pages/settings/appearance'));
+const SettingsBilling = lazy(() => import('./pages/settings/billing'));
+const SettingsBackups = lazy(() => import('./pages/settings/backups'));
+const SettingsTokens = lazy(() => import('./pages/settings/tokens'));
+const SettingsWarehouses = lazy(() => import('./pages/settings/warehouses'));
+const SettingsLocations = lazy(() => import('./pages/settings/locations'));
+const SettingsTax = lazy(() => import('./pages/settings/tax'));
+const SettingsUnits = lazy(() => import('./pages/settings/units'));
+const SettingsCurrencies = lazy(() => import('./pages/settings/currencies'));
+const SettingsNumbering = lazy(() => import('./pages/settings/numbering'));
+const SettingsPrintTemplates = lazy(() => import('./pages/settings/print-templates'));
+const SettingsNotifications = lazy(() => import('./pages/settings/notifications'));
+const SettingsWebhooks = lazy(() => import('./pages/settings/webhooks'));
+
 
 /* Tools */
 const ToolsImportExport = lazy(() => import('./pages/placeholder'));
