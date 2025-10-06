@@ -15,13 +15,13 @@ const fmt = (d, withTime) => {
     const pad = (n) => String(n).padStart(2, "0");
     const base = `${days[dd.getDay()]} ${mons[dd.getMonth()]} ${pad(dd.getDate())} ${dd.getFullYear()}`;
     if (!withTime) return base;
-    return `${base} ${pad(dd.getHours())}:${pad(dd.getMinutes())}:${pad(dd.getSeconds())}hrs`;
+    return `${base} ${pad(dd.getHours())}:${pad(dd.getMinutes())}:${pad(dd.getSeconds())} hrs`;
 };
 
 const onlyTime = (d) => {
     const dd = d instanceof Date ? d : new Date(d);
     const pad = (n) => String(n).padStart(2, "0");
-    return `${pad(dd.getHours())}:${pad(dd.getMinutes())}:${pad(dd.getSeconds())}hrs`;
+    return `${pad(dd.getHours())}:${pad(dd.getMinutes())}:${pad(dd.getSeconds())} hrs`;
 };
 
 /** IST label */
