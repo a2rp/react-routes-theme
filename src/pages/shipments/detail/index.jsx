@@ -170,7 +170,7 @@ const ShipmentDetail = () => {
 
     return (
         <Styled.Page>
-            {/* print-only CSS hook (use the exact snippet you requested) */}
+            {/* print-only CSS hook */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

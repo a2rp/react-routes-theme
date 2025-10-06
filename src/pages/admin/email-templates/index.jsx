@@ -530,7 +530,7 @@ export default function AdminEmailTemplates() {
                 </main>
             </div>
 
-            {/* Print CSS (scoped as requested) */}
+            {/* Print CSS  */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

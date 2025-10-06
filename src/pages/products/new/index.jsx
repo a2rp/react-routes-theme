@@ -4,7 +4,7 @@ import { Styled } from "./styled";
 
 const DEMO_MODE = true;
 
-// date utils: exact formats you’re using across the app
+// date utils 
 const fmt = (d, withTime) => {
     const dd = d instanceof Date ? d : new Date(d);
     const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];

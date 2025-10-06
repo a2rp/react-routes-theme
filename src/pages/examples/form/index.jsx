@@ -117,7 +117,7 @@ const ExampleForm = () => {
 
     return (
         <Styled.Page className="container">
-            {/* print CSS — your exact snippet */}
+
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

@@ -3,7 +3,7 @@ import { NavLink, useParams, useNavigate } from "react-router-dom";
 import { Styled } from "./styled";
 import { MdPrint, MdArrowBack, MdFileDownload, MdLocalShipping, MdInventory2 } from "react-icons/md";
 
-/* date utilities with your exact formatting rules */
+/* date utilities exact formatting rules */
 const fmt = (input, withTime = false) => {
     const d = input instanceof Date ? input : new Date(input);
     const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -188,7 +188,7 @@ const PurchaseOrderReceipt = () => {
 
     return (
         <Styled.Page>
-            {/* Print CSS (your exact snippet) */}
+            {/* Print CSS */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

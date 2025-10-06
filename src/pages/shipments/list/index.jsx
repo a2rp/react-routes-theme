@@ -246,7 +246,7 @@ const ShipmentsList = () => {
 
     return (
         <Styled.Page>
-            {/* print rules (scoped as requested) */}
+            {/* print rules   */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

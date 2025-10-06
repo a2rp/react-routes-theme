@@ -88,7 +88,7 @@ const DashboardPage = () => {
 
     return (
         <Styled.Page>
-            {/* Print CSS — exactly as you wanted */}
+
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

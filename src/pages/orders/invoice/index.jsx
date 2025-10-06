@@ -170,7 +170,6 @@ const OrderInvoicePage = () => {
 
     return (
         <Styled.Page>
-            {/* exact print CSS you asked for */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

@@ -35,10 +35,7 @@ function fmtDateTime(iso) {
     return `${fmtDate(iso)} ${fmtTime(iso)}`;
 }
 
-/** ----------------------------------------------------------------
- *  Demo fixtures (display-only)
- *  In real app you'd load via loader+repo. Here we keep it internal.
- *  ---------------------------------------------------------------*/
+
 const FIXTURES = {
     "IMG-1001": {
         id: "IMG-1001",

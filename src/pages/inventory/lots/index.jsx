@@ -367,7 +367,7 @@ const Lots = () => {
 
     return (
         <Styled.Page>
-            {/* print CSS (scoped as requested) */}
+
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

@@ -2,7 +2,7 @@ import React, { useMemo, useState, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import * as S from "./styled";
 
-/** date formatting helpers (spec you gave) */
+/** date formatting helpers   */
 const fmt = {
     date: (iso) => {
         if (!iso) return "";
@@ -28,7 +28,7 @@ const fmt = {
     },
 };
 
-/** display-only fixtures; expand later from your global repo layer when ready */
+/** display-only fixtures; */
 const FIX_FLAGS = [
     {
         key: "checkout_new_ui",
@@ -304,7 +304,7 @@ export default function AdminFeatureFlags() {
                 </div>
             </S.Toolbar>
 
-            {/* print-only styles (your exact snippet) */}
+            {/* print-only styles */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

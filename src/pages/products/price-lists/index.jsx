@@ -153,7 +153,7 @@ const PriceListsPage = () => {
 
     return (
         <Styled.Page>
-            {/* print rules per your standard */}
+            {/* print rules  */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

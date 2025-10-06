@@ -2,7 +2,7 @@ import React, { useMemo, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import * as S from "./styled";
 
-/* ===== Date helpers (exact formats you wanted) ===== */
+/* ===== Date helpers ===== */
 const WEEK = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 

@@ -2,7 +2,7 @@ import React, { useMemo, useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { Styled } from "./styled";
 
-// tiny date utils with your required formats
+// tiny date utils
 const pad = (n) => String(n).padStart(2, "0");
 const dateOnly = (iso) => {
     const d = new Date(iso);
@@ -236,7 +236,7 @@ const PrintQuote = () => {
 
     return (
         <Styled.Wrap>
-            {/* print CSS (your exact snippet) */}
+            {/* print CSS */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

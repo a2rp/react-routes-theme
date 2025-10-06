@@ -127,7 +127,7 @@ const ExampleBreadcrumbsPage = () => {
 
     return (
         <Styled.Page className="container">
-            {/* print rules (as provided) */}
+
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

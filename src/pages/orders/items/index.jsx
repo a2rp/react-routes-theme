@@ -125,7 +125,7 @@ const OrderItems = () => {
 
     return (
         <Styled.Page>
-            {/* print css (required snippet) */}
+            {/* print css  */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

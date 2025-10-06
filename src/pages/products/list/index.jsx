@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Styled } from "./styled";
 
-// --- tiny date utils with the exact formats you use everywhere
+// --- tiny date utils  
 const fmt = (d, withTime) => {
     const dd = d instanceof Date ? d : new Date(d);
     const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -289,7 +289,7 @@ const ProductsList = () => {
 
     return (
         <Styled.Page>
-            {/* print CSS (scoped snippet) */}
+            {/* print CSS  */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

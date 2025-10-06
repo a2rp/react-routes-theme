@@ -231,7 +231,7 @@ const AdminSmsTemplates = () => {
 
     return (
         <S.Wrap>
-            {/* inline print CSS (your required snippet) */}
+            {/* inline print CSS   */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

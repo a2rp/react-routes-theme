@@ -200,7 +200,7 @@ const SearchPage = () => {
 
     return (
         <Styled.Page>
-            {/* print CSS (as requested) */}
+            {/* print CSS */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

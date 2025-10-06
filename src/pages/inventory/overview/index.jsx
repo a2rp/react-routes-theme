@@ -112,7 +112,7 @@ const InventoryOverview = () => {
 
     return (
         <Styled.Page>
-            {/* print rules as requested */}
+
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

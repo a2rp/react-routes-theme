@@ -160,7 +160,7 @@ const InvoiceEdit = () => {
 
     return (
         <Styled.Page>
-            {/* print-only rules (your global snippet) */}
+
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

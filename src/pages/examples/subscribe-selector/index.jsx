@@ -212,7 +212,7 @@ const ExampleSubscribeSelector = () => {
 
     return (
         <Styled.Page className="container">
-            {/* print CSS block as requested */}
+            {/* print CSS block  */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

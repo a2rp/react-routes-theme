@@ -12,7 +12,7 @@ import {
     MdZoomOut,
 } from "react-icons/md";
 
-/* date utils to keep your exact formats everywhere */
+/* date utils */
 const fmtDate = (d) => {
     const x = d instanceof Date ? d : new Date(d);
     const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -191,7 +191,7 @@ const ExampleGallery = () => {
 
     return (
         <Styled.Page>
-            {/* print CSS block (as requested, exact selector / semantics) */}
+            {/* print CSS block */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

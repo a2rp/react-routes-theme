@@ -87,7 +87,7 @@ const CustomerPrint = () => {
 
     return (
         <Styled.Page className="container">
-            {/* Print CSS (as requested) */}
+            {/* Print CSS  */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

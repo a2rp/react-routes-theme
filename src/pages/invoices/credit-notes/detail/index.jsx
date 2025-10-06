@@ -227,7 +227,7 @@ const CreditNoteDetail = () => {
 
     return (
         <Styled.Page>
-            {/* print CSS as requested */}
+
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

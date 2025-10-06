@@ -198,7 +198,6 @@ const HsnGstPage = () => {
 
     return (
         <Styled.Page>
-            {/* print stylesheet hook (exact) */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

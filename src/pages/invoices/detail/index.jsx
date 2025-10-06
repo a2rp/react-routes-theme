@@ -163,7 +163,7 @@ const InvoiceDetail = () => {
 
     return (
         <Styled.Page>
-            {/* print CSS (scoped to #search-print-area as requested) */}
+            {/* print CSS (scoped to #search-print-area ) */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

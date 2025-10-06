@@ -141,7 +141,7 @@ const SalesOverview = () => {
 
     return (
         <Styled.Page className="container">
-            {/* print rule — your exact snippet */}
+            {/* print rule  */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

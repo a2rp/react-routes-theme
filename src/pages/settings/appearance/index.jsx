@@ -16,7 +16,7 @@ import {
     MdLink,
 } from "react-icons/md";
 
-/* --- tiny date utils with your required formats --- */
+/* --- tiny date utils --- */
 const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const pad2 = (n) => String(n).padStart(2, "0");

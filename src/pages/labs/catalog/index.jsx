@@ -4,7 +4,7 @@ import { Styled } from "./styled";
 
 const DEMO_MODE = true;
 
-// Util: Date/Time formatting per your rule
+// Util: Date/Time
 function fmtDate(iso) {
     const d = new Date(iso);
     return d.toDateString().replace(/^\w{3}/, d.toDateString().slice(0, 3)); // Sat Oct 04 2025 style (native gives similar)
@@ -282,7 +282,7 @@ export default function LabCatalog() {
 
     return (
         <Styled.Page>
-            {/* Print rules required (your global snippet) */}
+
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

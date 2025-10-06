@@ -8,7 +8,7 @@ import { FiRefreshCw, FiExternalLink } from "react-icons/fi";
 /* Demo-only flag (non-destructive actions only) */
 const DEMO_MODE = true;
 
-/* Date helpers — exact formats requested */
+/* Date helpers  */
 const pad = (n) => String(n).padStart(2, "0");
 
 const fmtDate = (d) => {

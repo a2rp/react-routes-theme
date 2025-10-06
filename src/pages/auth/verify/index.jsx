@@ -84,7 +84,7 @@ const VerifyPage = () => {
 
     return (
         <Styled.Wrap>
-            {/* Print-only CSS as requested */}
+
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

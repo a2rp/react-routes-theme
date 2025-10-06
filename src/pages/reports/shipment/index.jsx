@@ -93,7 +93,7 @@ export default function ReportShipment() {
 
     return (
         <S.Page>
-            {/* print-only rules (as requested) */}
+            {/* print-only rules  */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

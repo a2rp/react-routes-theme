@@ -173,7 +173,7 @@ const ExampleDevtoolsTodos = () => {
     const [selected, setSelected] = useState(TODOS[0]);
     const [showDemo, setShowDemo] = useState(false);
 
-    // focus search on mount (matches your nav UX)
+
     const searchRef = useRef(null);
     useEffect(() => {
         const id = requestAnimationFrame(() => {
@@ -213,7 +213,7 @@ const ExampleDevtoolsTodos = () => {
 
     return (
         <Styled.Page>
-            {/* print CSS as requested (scoped here) */}
+            {/* print CSS   */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

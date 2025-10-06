@@ -270,7 +270,6 @@ export const Styled = {
     `,
 
     PrintWrap: styled.section`
-        /* Hidden visually; revealed in print via global CSS you provided */
         position: absolute;
         left: -9999px;
         top: -9999px;

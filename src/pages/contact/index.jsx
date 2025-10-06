@@ -3,7 +3,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import { Styled } from "./styled";
 import { MdContentCopy, MdPrint, MdCall, MdEmail, MdOpenInNew, MdWhatsapp } from "react-icons/md";
 
-/** Date formatting helpers (strict to your requested formats) */
+/** Date formatting helpers   */
 const WEEK = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
@@ -97,7 +97,7 @@ const Contact = () => {
 
     return (
         <Styled.Page>
-            {/* PRINT CSS (exact snippet you requested) */}
+
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
@@ -405,7 +405,7 @@ const Contact = () => {
                         <p>This is a display-only theme. Actions like “Submit” or “Request Callback” are disabled.</p>
                         <div className="actions">
                             <button onClick={closeDemoModal}>Okay</button>
-                            <a className="ghost" href="mailto:support@yourco.example">Email Support</a>
+                            <a className="ghost" href="mailto:support@rco.example">Email Support</a>
                         </div>
                     </Styled.Modal>
                 </Styled.ModalBackdrop>

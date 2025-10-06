@@ -354,7 +354,7 @@ const FaqPage = () => {
 
     return (
         <S.Wrap>
-            {/* print-only rules (scoped to page via body class as requested) */}
+            {/* print-only rules (scoped to page via body class) */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

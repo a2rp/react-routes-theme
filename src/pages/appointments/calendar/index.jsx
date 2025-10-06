@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Styled } from "./styled";
 
 /** ----------------------------------------------------------------------------
- *  Date helpers (format must be EXACT as requested)
+ *  Date helpers (format must be EXACT )
  *  ---------------------------------------------------------------------------- */
 const DAY = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -215,7 +215,7 @@ const AppointmentCalendarPage = () => {
     const printSection = () => {
         const body = document.body;
         body.classList.add("print-section-mode");
-        window.requestAnimationFrame(() => {
+        window.AnimationFrame(() => {
             window.print();
             window.setTimeout(() => body.classList.remove("print-section-mode"), 300);
         });
@@ -223,7 +223,7 @@ const AppointmentCalendarPage = () => {
 
     return (
         <Styled.Page>
-            {/* Print CSS (as requested) */}
+            {/* Print CSS   */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

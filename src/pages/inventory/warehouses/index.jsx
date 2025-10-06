@@ -290,7 +290,7 @@ const Warehouses = () => {
 
     return (
         <Styled.Page className="container">
-            {/* print CSS (exact semantics) */}
+
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

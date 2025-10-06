@@ -122,7 +122,7 @@ export default function ManufacturingOverview() {
 
     return (
         <Styled.Wrap>
-            {/* PRINT CSS (as requested) */}
+            {/* PRINT CSS   */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

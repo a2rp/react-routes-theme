@@ -29,7 +29,7 @@ const DATASETS = [
     { key: "users", label: "Users", icon: <FiShield />, count: 12, list: "/admin/users", sample: "/admin/users" },
 ];
 
-/** Utility: date formatting exactly as requested */
+/** Utility: date formatting   */
 function pad2(n) { return n.toString().padStart(2, "0"); }
 function shortDow(d) { return ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][d.getDay()]; }
 function shortMon(d) { return ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][d.getMonth()]; }
@@ -96,7 +96,7 @@ export default function ToolsSeedPage() {
 
     return (
         <S.Wrap>
-            {/* print rules (scoped snippet you provided) */}
+            {/* print rules */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

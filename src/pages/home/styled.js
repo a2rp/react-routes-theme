@@ -37,6 +37,7 @@ export const Styled = {
         .heroText .lead {
             color: ${muted};
             max-width: 64ch;
+            margin-top: 15px;
             margin-bottom: 10px;
         }
         .heroText .meta {

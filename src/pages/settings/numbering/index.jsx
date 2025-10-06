@@ -264,7 +264,7 @@ export default function SettingsNumberingPage() {
                 </Grid>
             </div>
 
-            {/* Print CSS (as requested) */}
+            {/* Print CSS  */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

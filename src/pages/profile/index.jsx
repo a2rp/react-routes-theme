@@ -156,7 +156,7 @@ export default function ProfilePage() {
 
     return (
         <Styled.Page>
-            {/* Print rules (as requested) */}
+            {/* Print rules  */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

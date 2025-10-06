@@ -2,7 +2,7 @@ import React, { useMemo, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { Styled } from "./styled";
 
-// date utils (consistent with your format)
+
 const pad = (n) => String(n).padStart(2, "0");
 const fmt = (d, withTime) => {
     const dd = d instanceof Date ? d : new Date(d);
@@ -43,7 +43,7 @@ const ExamplesOverview = () => {
 
     return (
         <Styled.Page className="container">
-            {/* print CSS (as requested) */}
+            {/* print CSS   */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

@@ -7,7 +7,7 @@ import { Styled } from "./styled";
  *  ---------------------------------------------------------------- */
 const ACTIONS = ["view", "create", "edit", "delete", "export", "approve"];
 
-// Modules you already route to (kept exhaustive for navigation)
+//  
 const MODULES = [
     { key: "dashboard", label: "Dashboard", route: "/dashboard" },
     { key: "customers", label: "Customers", route: "/customers" },

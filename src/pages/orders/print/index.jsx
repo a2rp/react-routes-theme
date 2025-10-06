@@ -78,7 +78,7 @@ const demoOrders = {
                 uom: "Strip",
                 price: 120.00,
                 taxRate: 12,
-                lineTotal: 1344.00,     // includes tax or as per your fixture convention
+                lineTotal: 1344.00,
                 taxAmount: 144.00
             },
             {
@@ -178,7 +178,7 @@ const OrderPrint = () => {
 
     return (
         <Styled.Page>
-            {/* print CSS (as required) */}
+            {/* print CSS  */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

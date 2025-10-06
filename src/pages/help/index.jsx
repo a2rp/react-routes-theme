@@ -354,7 +354,7 @@ const HelpPage = () => {
             </section>
             {/* PRINT AREA END */}
 
-            {/* Print styles as requested */}
+            {/* Print styles   */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

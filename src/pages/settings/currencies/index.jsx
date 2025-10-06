@@ -3,7 +3,7 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import { Styled } from "./styled";
 import { MdSearch, MdPrint, MdFileDownload, MdLock, MdInfoOutline, MdContentCopy, MdWarningAmber } from "react-icons/md";
 
-/** Formatting helpers — use exact formats requested */
+/** Formatting helpers  */
 function pad2(n) { return n.toString().padStart(2, "0"); }
 function formatDate(d) {
     const dt = d instanceof Date ? d : new Date(d);

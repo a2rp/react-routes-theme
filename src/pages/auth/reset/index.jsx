@@ -87,7 +87,6 @@ export default function ResetPage() {
 
     return (
         <S.Wrap>
-            {/* Print CSS (exact snippet requested) */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

@@ -30,7 +30,6 @@ const PERIODS = [
 ];
 
 const RETURNS = [
-    // Pre-formatted labels to guarantee your exact spec
     {
         id: "RET-APR-1",
         period: "Apr 2025",

@@ -219,7 +219,7 @@ const SettingsLocations = () => {
 
     return (
         <Styled.Wrapper>
-            {/* PRINT CSS (exact snippet) */}
+            {/* PRINT CSS  */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

@@ -1,4 +1,4 @@
-import React, { useMemo, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { Styled } from "./styled";
 import {
@@ -7,7 +7,7 @@ import {
     FiPrinter, FiExternalLink, FiSearch
 } from "react-icons/fi";
 
-/** date formatting helpers — exact formats requested */
+/** date formatting helpers */
 const fmt = (d, withTime) => {
     const dd = d instanceof Date ? d : new Date(d);
     const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -24,16 +24,50 @@ const onlyTime = (d) => {
     return `${pad(dd.getHours())}:${pad(dd.getMinutes())}:${pad(dd.getSeconds())}hrs`;
 };
 
+/** IST label */
+function formatISTLabel(iso) {
+    try {
+        const d = new Date(iso);
+        const parts = new Intl.DateTimeFormat("en-US", {
+            month: "short",
+            day: "2-digit",
+            year: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit",
+            hour12: false,
+            timeZone: "Asia/Kolkata",
+        }).formatToParts(d);
+        const get = (t) => parts.find((p) => p.type === t)?.value || "";
+        // Example: "Oct 04, 2025 15:38:20 hrs"
+        return `${get("month")} ${get("day")}, ${get("year")} ${get("hour")}:${get("minute")}:${get("second")} hrs`;
+    } catch {
+        return "-";
+    }
+}
+
 const DEMO_MODE = true; // display-only theme
 
 const Home = () => {
     const navigate = useNavigate();
     const printRef = useRef(null);
 
+    // build/commit times (from vite define)
     const buildISO = typeof __APP_BUILD_ISO__ !== "undefined" ? __APP_BUILD_ISO__ : new Date().toISOString();
     const commitISO = typeof __APP_COMMIT_ISO__ !== "undefined" ? __APP_COMMIT_ISO__ : new Date().toISOString();
 
-    const now = useMemo(() => new Date(), []);
+    const LAST_ISO =
+        (typeof __APP_COMMIT_ISO__ !== "undefined" && __APP_COMMIT_ISO__) ||
+        (typeof __APP_BUILD_ISO__ !== "undefined" && __APP_BUILD_ISO__) ||
+        null;
+    const lastUpdatedLabel = LAST_ISO ? formatISTLabel(LAST_ISO) : "-";
+
+    // live clock
+    const [now, setNow] = useState(new Date());
+    useEffect(() => {
+        const id = setInterval(() => setNow(new Date()), 1000);
+        return () => clearInterval(id);
+    }, []);
     const today = fmt(now);
     const nowWithTime = fmt(now, true);
 
@@ -52,7 +86,6 @@ const Home = () => {
 
     return (
         <Styled.Page>
-            {/* Print rules (exact snippet you provided) */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
@@ -73,15 +106,23 @@ const Home = () => {
             <header className="hero card">
                 <div className="heroText">
                     <h1>React Routes Theme</h1>
-                    <p className="lead">
-                        Polished, display-only ERP frontend theme. No writes, no surprises — just premium UX,
-                        deep links, and gorgeous defaults.
+
+                    {/* Last updated line */}
+                    <p className="muted" style={{ marginTop: 6 }}>
+                        last updated: <time dateTime={LAST_ISO || ""}>{lastUpdatedLabel}</time>
                     </p>
+
                     <div className="meta">
                         <span title="Current date">{today}</span>
                         <span className="dot">•</span>
                         <span title="Current time">{onlyTime(now)}</span>
                     </div>
+
+                    <p className="lead">
+                        Polished, display-only ERP frontend theme. No writes, no surprises — just premium UX,
+                        deep links, and gorgeous defaults.
+                    </p>
+
                 </div>
 
                 <div className="heroActions">
@@ -93,7 +134,12 @@ const Home = () => {
                         <Link className="btnGhost" to="/examples/print" title="Print demo">
                             <FiPrinter style={{ marginRight: 8 }} /> Print Demo
                         </Link>
-                        <a className="btnGhost" href="data:application/json;charset=utf-8,{}" download="export.json" title="Export snapshot (static)">
+                        <a
+                            className="btnGhost"
+                            href="data:application/json;charset=utf-8,{}"
+                            download="export.json"
+                            title="Export snapshot (static)"
+                        >
                             <FiDownload style={{ marginRight: 8 }} /> Export JSON
                         </a>
                     </div>
@@ -242,6 +288,10 @@ const Home = () => {
                         <div>
                             <div className="k">Last Commit</div>
                             <div className="v">{fmt(commitISO, true)}</div>
+                        </div>
+                        <div>
+                            <div className="k">Last Updated</div>
+                            <div className="v"><time dateTime={LAST_ISO || ""}>{lastUpdatedLabel}</time></div>
                         </div>
                         <div>
                             <div className="k">Demo Mode</div>

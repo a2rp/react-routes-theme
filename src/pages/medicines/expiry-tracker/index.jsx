@@ -316,7 +316,6 @@ const ExpiryTracker = () => {
 
     return (
         <Styled.Page>
-            {/* print rules (your standard) */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

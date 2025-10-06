@@ -222,7 +222,7 @@ const ReceiptsList = () => {
 
     return (
         <Styled.Page>
-            {/* print rules (your exact snippet) */}
+            {/* print rules */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

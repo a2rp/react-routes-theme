@@ -143,7 +143,6 @@ const ExampleTable = () => {
 
     return (
         <Styled.Page className="container">
-            {/* Print CSS (exact pattern) */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

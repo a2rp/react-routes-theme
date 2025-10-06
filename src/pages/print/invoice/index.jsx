@@ -129,7 +129,7 @@ const InvoicePrint = () => {
 
     return (
         <Styled.Wrapper data-gridlines={grid ? "on" : "off"} data-compact={compact ? "on" : "off"}>
-            {/* print CSS - exact snippet you standardised */}
+            {/* print CSS */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
