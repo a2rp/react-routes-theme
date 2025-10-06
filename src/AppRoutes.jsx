@@ -234,9 +234,10 @@ const RoadmapPage = lazy(() => import('./pages/roadmap'));
 
 
 /* Print helpers */
-const PrintQuote = lazy(() => import('./pages/placeholder'));
-const PrintSticker = lazy(() => import('./pages/placeholder'));
-const PrintInvoice = lazy(() => import('./pages/placeholder'));
+const PrintQuote = lazy(() => import('./pages/print/quote'));
+const PrintSticker = lazy(() => import('./pages/print/sticker'));
+const PrintInvoice = lazy(() => import('./pages/print/invoice'));
+
 
 const AppRoutes = () => (
     <Suspense fallback={
