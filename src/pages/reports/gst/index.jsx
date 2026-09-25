@@ -234,9 +234,9 @@ export default function ReportGstPage() {
                         <div className="panelHead">Reconciliation</div>
                         <div className="panelBody">
                             <ul className="list">
-                                <li>2 invoices missing HSN — <Link to="/invoices">review</Link></li>
-                                <li>1 supplier GSTIN unverified — <Link to="/vendors">check vendor</Link></li>
-                                <li>3 e-way bills not linked — <Link to="/shipments">link shipment</Link></li>
+                                <li>2 invoices missing HSN - <Link to="/invoices">review</Link></li>
+                                <li>1 supplier GSTIN unverified - <Link to="/vendors">check vendor</Link></li>
+                                <li>3 e-way bills not linked - <Link to="/shipments">link shipment</Link></li>
                             </ul>
                             <div className="actions">
                                 <NavLink to="/finance/ledgers">Ledgers</NavLink>
@@ -249,7 +249,7 @@ export default function ReportGstPage() {
                 {/* outward supplies table */}
                 <Styled.TableBlock className="card">
                     <div className="head">
-                        <h3>Invoice Register — Outward</h3>
+                        <h3>Invoice Register - Outward</h3>
                         <div className="links">
                             <Link to="/invoices">Open List</Link>
                             <button onClick={() => openBlocked("Export Disabled", "Exporting tables is disabled in demo.")}><MdFileDownload /> Export</button>
@@ -303,7 +303,7 @@ export default function ReportGstPage() {
                 {/* ITC table */}
                 <Styled.TableBlock className="card">
                     <div className="head">
-                        <h3>Input Tax Credit — Purchases</h3>
+                        <h3>Input Tax Credit - Purchases</h3>
                         <div className="links">
                             <Link to="/purchase-orders">Purchases</Link>
                             <button onClick={() => openBlocked("Export Disabled", "Exporting tables is disabled in demo.")}><MdFileDownload /> Export</button>

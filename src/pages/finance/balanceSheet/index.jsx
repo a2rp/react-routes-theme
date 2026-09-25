@@ -131,7 +131,7 @@ export default function BalanceSheet() {
     const [modal, setModal] = useState({ open: false, type: null });
 
     const now = useMemo(() => new Date(), []);
-    const periodText = `${formatDate(SAMPLE.period.start)} — ${formatDate(SAMPLE.period.end)}`;
+    const periodText = `${formatDate(SAMPLE.period.start)} - ${formatDate(SAMPLE.period.end)}`;
     const asOfText = formatDateTime(SAMPLE.period.asOf);
 
     const handlePrint = () => {

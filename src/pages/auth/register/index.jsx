@@ -79,7 +79,7 @@ export default function RegisterPage() {
             <section className="hero">
                 <h1>Create your account</h1>
                 <p className="sub">
-                    One account for everything — dashboard, customers, orders, invoices, reports, and more.
+                    One account for everything - dashboard, customers, orders, invoices, reports, and more.
                 </p>
                 <div className="quick-links">
                     <Link to="/dashboard" className="chip" title="Go to Dashboard">Dashboard</Link>
@@ -162,7 +162,7 @@ export default function RegisterPage() {
                         </div>
 
                         <div className="actions">
-                            <button type="submit" className="btnPrimary" title="Display-only demo — action disabled">
+                            <button type="submit" className="btnPrimary" title="Display-only demo - action disabled">
                                 Create Account
                             </button>
                             <button type="button" className="btnGhost" onClick={handlePrint} title="Print the summary section">

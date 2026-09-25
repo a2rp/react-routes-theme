@@ -319,7 +319,7 @@ const ReportsOverview = () => {
                                     { po: "PO-5018", ven: "Nimbus Traders", dt: "2025-09-29T14:22:40+05:30", st: "Open", eta: "Sun Oct 05 2025", href: "/purchase-orders/PO-5018" },
                                     { po: "PO-5017", ven: "Aurum Med", dt: "2025-09-28T16:43:12+05:30", st: "Partial", eta: "Tue Oct 07 2025", href: "/purchase-orders/PO-5017" },
                                     { po: "PO-5016", ven: "Vertex Pharma", dt: "2025-09-28T10:05:54+05:30", st: "Open", eta: "Mon Oct 06 2025", href: "/purchase-orders/PO-5016" },
-                                    { po: "PO-5015", ven: "Cobalt Labs", dt: "2025-09-27T09:18:33+05:30", st: "Billed", eta: "—", href: "/purchase-orders/PO-5015" }
+                                    { po: "PO-5015", ven: "Cobalt Labs", dt: "2025-09-27T09:18:33+05:30", st: "Billed", eta: "-", href: "/purchase-orders/PO-5015" }
                                 ].map(row => (
                                     <tr key={row.po}>
                                         <td>{row.po}</td>

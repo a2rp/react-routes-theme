@@ -26,7 +26,7 @@ function fmtDateTime(iso) {
 const DEMO_TEMPLATES = [
     {
         id: "tpl-invoice-modern",
-        name: "Invoice — Modern",
+        name: "Invoice - Modern",
         entity: "invoice",
         paper: "A4",
         margins: "16mm",
@@ -37,7 +37,7 @@ const DEMO_TEMPLATES = [
     },
     {
         id: "tpl-invoice-compact",
-        name: "Invoice — Compact",
+        name: "Invoice - Compact",
         entity: "invoice",
         paper: "A4",
         margins: "10mm",
@@ -48,7 +48,7 @@ const DEMO_TEMPLATES = [
     },
     {
         id: "tpl-quote-clean",
-        name: "Quote — Clean",
+        name: "Quote - Clean",
         entity: "quote",
         paper: "A4",
         margins: "14mm",
@@ -59,7 +59,7 @@ const DEMO_TEMPLATES = [
     },
     {
         id: "tpl-receipt-mini",
-        name: "Receipt — Mini",
+        name: "Receipt - Mini",
         entity: "receipt",
         paper: "80mm roll",
         margins: "3mm",
@@ -70,7 +70,7 @@ const DEMO_TEMPLATES = [
     },
     {
         id: "tpl-sticker-label",
-        name: "Sticker — Shipping Label",
+        name: "Sticker - Shipping Label",
         entity: "sticker",
         paper: "4x6in",
         margins: "0",
@@ -106,7 +106,7 @@ const DEMO_INVOICE = {
         { sku: "MED-VITC-1K", name: "Vitamin C 1000mg Effervescent", qty: 1, mrp: 350, rate: 299, gst: 12, amount: 299 },
     ],
     totals: { subTotal: 794, tax: 78, roundOff: 0, grand: 872 },
-    payment: { status: "Unpaid", due: "2025-10-20T00:00:00+05:30", method: "—" },
+    payment: { status: "Unpaid", due: "2025-10-20T00:00:00+05:30", method: "-" },
 };
 
 function ConfirmModal({ open, title, message, onClose }) {

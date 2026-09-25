@@ -46,7 +46,7 @@ const FIXTURES = {
         requestedAt: "2025-10-04T09:35:20+05:30",
         performedAt: "2025-10-04T12:10:42+05:30",
         reportedAt: "2025-10-04T16:05:07+05:30",
-        site: "Main Campus — Scanner CT-02",
+        site: "Main Campus - Scanner CT-02",
         radiologist: { id: "USR-502", name: "Dr. N. Bhattacharya" },
         requestedBy: { id: "USR-410", name: "Dr. R. Sharma" },
         patient: {
@@ -97,7 +97,7 @@ const FIXTURES = {
         requestedAt: "2025-10-03T18:28:10+05:30",
         performedAt: "2025-10-04T08:22:11+05:30",
         reportedAt: null,
-        site: "Main Campus — MRI-01",
+        site: "Main Campus - MRI-01",
         radiologist: { id: "USR-503", name: "Dr. K. Ahuja" },
         requestedBy: { id: "USR-411", name: "Dr. P. Joshi" },
         patient: {
@@ -133,7 +133,7 @@ const FIXTURES = {
         requestedAt: "2025-10-05T09:05:00+05:30",
         performedAt: null,
         reportedAt: null,
-        site: "Satellite Center — XR-03",
+        site: "Satellite Center - XR-03",
         radiologist: { id: "USR-502", name: "Dr. N. Bhattacharya" },
         requestedBy: { id: "USR-510", name: "Dr. A. Sen" },
         patient: {
@@ -148,7 +148,7 @@ const FIXTURES = {
         },
         series: [{ id: "SER-1", desc: "PA View", images: 1, res: "2048×2048", size: "6.8 MB" }],
         attachments: [],
-        impression: ["Scheduled — report will be available after scan."],
+        impression: ["Scheduled - report will be available after scan."],
         timeline: [{ when: "2025-10-05T09:05:00+05:30", label: "Requested & scheduled" }],
         related: { labs: [], prescriptions: [], invoices: [] },
     },
@@ -257,7 +257,7 @@ export default function ImagingDetail() {
             <Styled.HeaderBlock>
                 <div className="left">
                     <h1>
-                        {study.modality} — {study.bodyPart} <span className="dim">({study.id})</span>
+                        {study.modality} - {study.bodyPart} <span className="dim">({study.id})</span>
                     </h1>
                     <div className="meta">
                         <Styled.Badge title={`Status: ${study.status}`}>{study.status}</Styled.Badge>
@@ -284,7 +284,7 @@ export default function ImagingDetail() {
                 <Styled.Card className="print-only">
                     <Styled.CardHeader>
                         <div>
-                            <h2>Imaging Report — {study.modality} {study.bodyPart}</h2>
+                            <h2>Imaging Report - {study.modality} {study.bodyPart}</h2>
                             <p>
                                 Study ID: <strong>{study.id}</strong> &nbsp;|&nbsp; Patient:{" "}
                                 <strong>{patient.name}</strong> ({patient.sex}, {patient.age})

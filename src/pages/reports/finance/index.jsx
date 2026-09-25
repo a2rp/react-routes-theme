@@ -40,7 +40,7 @@ const kpis = [
     { label: "Gross Margin", value: "37.8%", delta: "+0.6pp", href: "/reports/finance" },
     { label: "Outstanding AR", value: "₹ 58,36,210", delta: "↓", href: "/sales/payments" },
     { label: "Outstanding AP", value: "₹ 33,11,720", delta: "↓", href: "/purchase-orders" },
-    { label: "Cash & Bank", value: "₹ 21,07,550", delta: "—", href: "/finance/ledgers/GL-CASH" },
+    { label: "Cash & Bank", value: "₹ 21,07,550", delta: "-", href: "/finance/ledgers/GL-CASH" },
 ];
 
 const topAccounts = [

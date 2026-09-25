@@ -59,7 +59,7 @@ const NavListCore = () => {
         applyAllCollapsed();
     }, [collapsed, applyAllCollapsed]);
 
-    // search/filter — OPEN sections that have a match (without overwriting saved state)
+    // search/filter - OPEN sections that have a match (without overwriting saved state)
     useEffect(() => {
         try { sessionStorage.setItem(STORAGE_KEY, search); } catch { }
         const root = wrapperRef.current; if (!root) return;

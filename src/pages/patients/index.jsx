@@ -509,7 +509,7 @@ export default function PatientsList() {
                                                 <div>{fmtDate(p.lastVisit)}</div>
                                                 <small className="muted">{fmtTime(p.lastVisit)}</small>
                                             </div>
-                                        ) : <span className="muted">—</span>}
+                                        ) : <span className="muted">-</span>}
                                     </td>
                                     <td>
                                         {p.nextAppt ? (
@@ -517,10 +517,10 @@ export default function PatientsList() {
                                                 <div>{fmtDate(p.nextAppt)}</div>
                                                 <small className="muted">{fmtTime(p.nextAppt)}</small>
                                             </div>
-                                        ) : <span className="muted">—</span>}
+                                        ) : <span className="muted">-</span>}
                                     </td>
                                     <td className="tags">
-                                        {p.tags.length ? p.tags.map(t => <S.Tag key={t}>{t}</S.Tag>) : <span className="muted">—</span>}
+                                        {p.tags.length ? p.tags.map(t => <S.Tag key={t}>{t}</S.Tag>) : <span className="muted">-</span>}
                                     </td>
                                     <td className="rowActions" onClick={(e) => e.stopPropagation()}>
                                         <S.RowLinks>

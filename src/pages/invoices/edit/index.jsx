@@ -41,7 +41,7 @@ const InvoiceEdit = () => {
     // display-only demo flag
     const DEMO = true;
 
-    // demo fixtures (no calculations — all values pre-computed)
+    // demo fixtures (no calculations - all values pre-computed)
     const now = useMemo(() => new Date("2025-10-04T12:05:33+05:30"), []);
     const model = useMemo(() => ({
         id: invoiceId || "INV-2031",

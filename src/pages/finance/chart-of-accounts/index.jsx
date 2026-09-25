@@ -409,7 +409,7 @@ const ChartOfAccounts = () => {
                                     <div>
                                         <div className="k">Tags</div>
                                         <div className="v tags">
-                                            {(selected.tags || []).length ? selected.tags.map(t => <span className="tag" key={t}>{t}</span>) : "—"}
+                                            {(selected.tags || []).length ? selected.tags.map(t => <span className="tag" key={t}>{t}</span>) : "-"}
                                         </div>
                                     </div>
                                 </div>

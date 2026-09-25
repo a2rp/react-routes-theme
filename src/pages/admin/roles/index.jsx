@@ -43,7 +43,7 @@ const ROLE_FIXTURES = [
     {
         id: "ROLE-MANAGER",
         name: "Manager",
-        description: "Business operations control—orders, invoices, inventory, and reports.",
+        description: "Business operations control-orders, invoices, inventory, and reports.",
         assignedUsers: 12,
         permissions: [
             "orders.read",
@@ -63,7 +63,7 @@ const ROLE_FIXTURES = [
     {
         id: "ROLE-ACCOUNTANT",
         name: "Accountant",
-        description: "Finance surfaces—journals, ledgers, GST, and financial statements.",
+        description: "Finance surfaces-journals, ledgers, GST, and financial statements.",
         assignedUsers: 4,
         permissions: [
             "finance.read",
@@ -91,7 +91,7 @@ const ROLE_FIXTURES = [
     {
         id: "ROLE-OPERATOR",
         name: "Operator",
-        description: "Day-to-day operations—orders, shipments, and printing.",
+        description: "Day-to-day operations-orders, shipments, and printing.",
         assignedUsers: 10,
         permissions: ["orders.read", "shipments.read", "shipments.labels", "print.read"],
         status: "Active",
@@ -111,7 +111,7 @@ const ROLE_FIXTURES = [
 ];
 
 /** -----------------------------------------------------------
- * Date helpers — required formats
+ * Date helpers - required formats
  * ----------------------------------------------------------*/
 const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];

@@ -25,7 +25,7 @@ const fmtDateTime = (iso) => `${fmtDate(iso)} ${fmtTime(iso)}`;
 const WORK_ORDERS = [
     {
         id: "WO-1001",
-        title: "Blister Pack — Amoxicillin 500mg (10x10)",
+        title: "Blister Pack - Amoxicillin 500mg (10x10)",
         productId: "MED-AMOX-500",
         productName: "Amoxicillin 500mg",
         bomId: "BOM-2001",
@@ -49,7 +49,7 @@ const WORK_ORDERS = [
     },
     {
         id: "WO-1002",
-        title: "Syrup — Paracetamol 250mg/5ml (100ml)",
+        title: "Syrup - Paracetamol 250mg/5ml (100ml)",
         productId: "MED-PARA-250-SYR",
         productName: "Paracetamol Syrup 250mg/5ml",
         bomId: "BOM-2007",
@@ -73,7 +73,7 @@ const WORK_ORDERS = [
     },
     {
         id: "WO-1003",
-        title: "Capsule — Omeprazole 20mg (Alu-Alu)",
+        title: "Capsule - Omeprazole 20mg (Alu-Alu)",
         productId: "MED-OME-020",
         productName: "Omeprazole 20mg",
         bomId: "BOM-2010",
@@ -97,7 +97,7 @@ const WORK_ORDERS = [
     },
     {
         id: "WO-1004",
-        title: "Tablet — Metformin 500mg (Film Coated)",
+        title: "Tablet - Metformin 500mg (Film Coated)",
         productId: "MED-MET-500",
         productName: "Metformin 500mg",
         bomId: "BOM-2015",
@@ -121,7 +121,7 @@ const WORK_ORDERS = [
     },
     {
         id: "WO-1005",
-        title: "Bottle — Cough Syrup (Ambroxol + Guaifenesin)",
+        title: "Bottle - Cough Syrup (Ambroxol + Guaifenesin)",
         productId: "MED-CGH-AMB-GF",
         productName: "Ambroxol + Guaifenesin",
         bomId: "BOM-2022",

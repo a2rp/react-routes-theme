@@ -8,7 +8,7 @@ import { LuExternalLink } from "react-icons/lu";
 const BUILD_ISO = (typeof __APP_BUILD_ISO__ !== "undefined" && __APP_BUILD_ISO__) || new Date().toISOString();
 const COMMIT_ISO = (typeof __APP_COMMIT_ISO__ !== "undefined" && __APP_COMMIT_ISO__) || new Date().toISOString();
 
-/** Date formatting — required formats:
+/** Date formatting - required formats:
  *  - Date only: Sat Oct 04 2025
  *  - Date+Time: Sat Oct 04 2025 15:38:20hrs
  *  - Time only: 15:38:20hrs
@@ -332,16 +332,16 @@ const HelpPage = () => {
                         </header>
                         <div className="tips">
                             <div className="tip">
-                                <code>Ctrl + K</code> — Open sidebar search
+                                <code>Ctrl + K</code> - Open sidebar search
                             </div>
                             <div className="tip">
-                                <code>Tab</code>/<code>Shift + Tab</code> — Fast navigation
+                                <code>Tab</code>/<code>Shift + Tab</code> - Fast navigation
                             </div>
                             <div className="tip">
-                                <code>?</code> — Help focus (when supported)
+                                <code>?</code> - Help focus (when supported)
                             </div>
                             <div className="tip">
-                                <code>Alt + ←/→</code> — Browser history
+                                <code>Alt + ←/→</code> - Browser history
                             </div>
                         </div>
                         <footer className="foot">

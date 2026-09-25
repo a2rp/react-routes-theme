@@ -429,9 +429,9 @@ const PurchaseOrderNew = () => {
                     <div className="card">
                         <h3>Shortcuts</h3>
                         <ul className="shortcuts">
-                            <li><kbd>Ctrl</kbd> + <kbd>P</kbd> — Print</li>
-                            <li><kbd>Ctrl</kbd> + <kbd>L</kbd> — Copy Link</li>
-                            <li><kbd>Esc</kbd> — Close / Cancel</li>
+                            <li><kbd>Ctrl</kbd> + <kbd>P</kbd> - Print</li>
+                            <li><kbd>Ctrl</kbd> + <kbd>L</kbd> - Copy Link</li>
+                            <li><kbd>Esc</kbd> - Close / Cancel</li>
                         </ul>
                     </div>
                 </aside>

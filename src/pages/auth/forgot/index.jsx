@@ -50,7 +50,7 @@ export default function ForgotPage() {
             <Styled.Banner role="note" aria-live="polite">
                 <div className="left">
                     <MdInfoOutline size={18} />
-                    <span>Demo preview — password reset is display-only.</span>
+                    <span>Demo preview - password reset is display-only.</span>
                 </div>
                 <div className="right">
                     <NavLink to="/home" title="Go to home">Home</NavLink>

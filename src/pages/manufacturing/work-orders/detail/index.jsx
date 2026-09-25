@@ -8,18 +8,18 @@ const monNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
 const pad2 = (n) => String(n).padStart(2, "0");
 
 function fmtDate(iso) {
-    if (!iso) return "—";
+    if (!iso) return "-";
     const d = new Date(iso);
     return `${dayNames[d.getDay()]} ${monNames[d.getMonth()]} ${pad2(d.getDate())} ${d.getFullYear()}`;
 }
 function fmtDateTime(iso) {
-    if (!iso) return "—";
+    if (!iso) return "-";
     const d = new Date(iso);
     const t = `${pad2(d.getHours())}:${pad2(d.getMinutes())}:${pad2(d.getSeconds())}hrs`;
     return `${fmtDate(iso)} ${t}`;
 }
 function fmtTime(iso) {
-    if (!iso) return "—";
+    if (!iso) return "-";
     const d = new Date(iso);
     return `${pad2(d.getHours())}:${pad2(d.getMinutes())}:${pad2(d.getSeconds())}hrs`;
 }
@@ -73,12 +73,12 @@ export default function WorkOrderDetailPage() {
         operations: [
             { id: "OP-10", name: "Mixing", workstation: "MIX-01", owner: "Akash", start: "2025-10-04T10:10:00.000Z", end: "2025-10-04T11:05:00.000Z", status: "Done", notes: "Viscosity checked" },
             { id: "OP-20", name: "Granulation", workstation: "GRN-02", owner: "Mira", start: "2025-10-04T11:20:00.000Z", end: "", status: "Running", notes: "Humidity stable" },
-            { id: "OP-30", name: "Drying", workstation: "DRY-01", owner: "—", start: "", end: "", status: "Pending", notes: "" },
-            { id: "OP-40", name: "Compression", workstation: "CMP-03", owner: "—", start: "", end: "", status: "Pending", notes: "" },
-            { id: "OP-50", name: "Blister Packaging", workstation: "PKG-01", owner: "—", start: "", end: "", status: "Pending", notes: "" },
+            { id: "OP-30", name: "Drying", workstation: "DRY-01", owner: "-", start: "", end: "", status: "Pending", notes: "" },
+            { id: "OP-40", name: "Compression", workstation: "CMP-03", owner: "-", start: "", end: "", status: "Pending", notes: "" },
+            { id: "OP-50", name: "Blister Packaging", workstation: "PKG-01", owner: "-", start: "", end: "", status: "Pending", notes: "" },
         ],
 
-        /** materials (issued / planned) — display only */
+        /** materials (issued / planned) - display only */
         materials: [
             { id: "RM-AMOX", name: "Amoxicillin Trihydrate", type: "API", uom: "kg", planned: 85, issued: 24, lot: "LOT-API-991", expiry: "2027-06-30T00:00:00.000Z" },
             { id: "RM-LACT", name: "Lactose Monohydrate", type: "Excipient", uom: "kg", planned: 40, issued: 10, lot: "LOT-EXC-402", expiry: "2028-01-31T00:00:00.000Z" },
@@ -183,7 +183,7 @@ export default function WorkOrderDetailPage() {
                         <div className="k">Product</div>
                         <div className="v">
                             <NavLink to={`/products/${data.product.id}`} className="mono">{data.product.id}</NavLink>
-                            <span className="muted"> — {data.product.name}</span>
+                            <span className="muted"> - {data.product.name}</span>
                         </div>
                     </div>
                     <div className="tile">
@@ -197,7 +197,7 @@ export default function WorkOrderDetailPage() {
                         <div className="k">Batch / Lot</div>
                         <div className="v">
                             <NavLink to={`/inventory/batches`} className="mono">{data.batch.id}</NavLink>
-                            <span className="muted"> — {data.batch.lot}</span>
+                            <span className="muted"> - {data.batch.lot}</span>
                             <span className="chip">Expiry: {fmtDate(data.batch.expiry)}</span>
                         </div>
                     </div>
@@ -205,7 +205,7 @@ export default function WorkOrderDetailPage() {
                         <div className="k">Warehouse</div>
                         <div className="v">
                             <NavLink to="/inventory/warehouses" className="mono">{data.warehouse.id}</NavLink>
-                            <span className="muted"> — {data.warehouse.name}</span>
+                            <span className="muted"> - {data.warehouse.name}</span>
                         </div>
                     </div>
                     <div className="tile">
@@ -247,7 +247,7 @@ export default function WorkOrderDetailPage() {
                                 </div>
                                 <div>
                                     <div className="k">Completed</div>
-                                    <div className="v">{data.completedAt ? fmtDateTime(data.completedAt) : "—"}</div>
+                                    <div className="v">{data.completedAt ? fmtDateTime(data.completedAt) : "-"}</div>
                                 </div>
                             </div>
                         </div>
@@ -280,9 +280,9 @@ export default function WorkOrderDetailPage() {
                                             <td className="mono">{op.id}</td>
                                             <td>{op.name}</td>
                                             <td><NavLink to="/manufacturing/production" title="Open production">{op.workstation}</NavLink></td>
-                                            <td>{op.owner || "—"}</td>
-                                            <td>{op.start ? fmtTime(op.start) : "—"}</td>
-                                            <td>{op.end ? fmtTime(op.end) : "—"}</td>
+                                            <td>{op.owner || "-"}</td>
+                                            <td>{op.start ? fmtTime(op.start) : "-"}</td>
+                                            <td>{op.end ? fmtTime(op.end) : "-"}</td>
                                             <td>
                                                 <span className={`badge ${op.status === "Done" ? "tone-done" : op.status === "Running" ? "tone-progress" : "tone-planned"}`}>
                                                     {op.status}
@@ -297,7 +297,7 @@ export default function WorkOrderDetailPage() {
                                     {data.operations.filter(x => x.notes).map(x => (
                                         <div className="note" key={x.id}>
                                             <span className="mono">{x.id}</span>
-                                            <span className="muted"> — </span>
+                                            <span className="muted"> - </span>
                                             <span>{x.notes}</span>
                                         </div>
                                     ))}
@@ -390,10 +390,10 @@ export default function WorkOrderDetailPage() {
                                                 <div className="muted">{m.name}</div>
                                             </td>
                                             <td>{m.type}</td>
-                                            <td>{m.lot || "—"}</td>
+                                            <td>{m.lot || "-"}</td>
                                             <td>{m.planned} {m.uom}</td>
                                             <td>{m.issued} {m.uom}</td>
-                                            <td>{m.expiry ? fmtDate(m.expiry) : "—"}</td>
+                                            <td>{m.expiry ? fmtDate(m.expiry) : "-"}</td>
                                         </tr>
                                     ))}
                                 </tbody>

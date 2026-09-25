@@ -414,10 +414,10 @@ const SalesReturnsList = () => {
 
             {/* print target (summary of current filter) */}
             <Styled.PrintCard id="search-print-area" className="card">
-                <h3>Sales Returns — Summary</h3>
+                <h3>Sales Returns - Summary</h3>
                 <div className="grid">
                     <div><div className="k">Exported</div><div className="v">{fmtDateTime(new Date())}</div></div>
-                    <div><div className="k">Query</div><div className="v">{query || "—"}</div></div>
+                    <div><div className="k">Query</div><div className="v">{query || "-"}</div></div>
                     <div><div className="k">Status</div><div className="v">{statusMap[status]}</div></div>
                     <div><div className="k">Method</div><div className="v">{methodMap[method]}</div></div>
                     <div><div className="k">Visible Rows</div><div className="v">{filtered.length}</div></div>

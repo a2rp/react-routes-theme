@@ -129,7 +129,7 @@ const FIXTURE_VENDORS = [
         status: "inactive",
         leadTimeDays: 7,
         payment: "Advance",
-        accountManager: "—",
+        accountManager: "-",
         portalUrl: "",
     },
     {
@@ -198,7 +198,7 @@ const FIXTURE_VENDORS = [
         status: "active",
         leadTimeDays: 10,
         payment: "Milestones",
-        accountManager: "—",
+        accountManager: "-",
         portalUrl: "",
     },
     {
@@ -267,7 +267,7 @@ const FIXTURE_VENDORS = [
         status: "active",
         leadTimeDays: 3,
         payment: "Advance",
-        accountManager: "—",
+        accountManager: "-",
         portalUrl: "",
     },
     {
@@ -618,7 +618,7 @@ const VendorsList = () => {
                                 </div>
                                 <div>
                                     <div className="label">Account Manager</div>
-                                    <div>{selected.accountManager || "—"}</div>
+                                    <div>{selected.accountManager || "-"}</div>
                                     <div className="label mt8">Payment</div>
                                     <div>{selected.payment}</div>
                                 </div>

@@ -97,7 +97,7 @@ const SalesOverview = () => {
         { key: "Revenue", value: "₹ 1,48,20,000", sub: "This period", delta: "+4.2%" },
         { key: "Orders", value: "1,236", sub: "Confirmed", delta: "+2.1%" },
         { key: "Avg Order Value", value: "₹ 11,985", sub: "Incl. taxes", delta: "−1.3%" },
-        { key: "Outstanding (AR)", value: "₹ 32,40,000", sub: "Due within 30d", delta: "—" },
+        { key: "Outstanding (AR)", value: "₹ 32,40,000", sub: "Due within 30d", delta: "-" },
     ];
 
     const PIPELINE = [

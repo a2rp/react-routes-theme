@@ -2,7 +2,7 @@ import React, { useMemo, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Styled } from "./styled";
 
-/** Date helpers — single source to ensure consistent formatting everywhere */
+/** Date helpers - single source to ensure consistent formatting everywhere */
 const fmt = (d, withTime) => {
     const dd = d instanceof Date ? d : new Date(d);
     const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];

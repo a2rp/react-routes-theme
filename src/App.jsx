@@ -1,92 +1,105 @@
-import ScrollToTop from './components/ScrollToTop';
-import Styled from './App.styled';
-import { Route, Routes, NavLink } from 'react-router-dom';
-import { lazy, Suspense, useEffect, useRef, useState } from 'react';
-import { MdArrowUpward, MdMenuOpen } from 'react-icons/md';
-import { TbSunMoon } from 'react-icons/tb';
-import { IoNotificationsCircleSharp } from 'react-icons/io5';
-import { CiSettings } from 'react-icons/ci';
-import { FaRegUser } from 'react-icons/fa';
-import { Box, CircularProgress } from '@mui/material';
-import Footer from './components/footer';
-import NavList from './components/navList';
-import AppRoutes from './AppRoutes';
-import { RiAccountPinCircleFill } from 'react-icons/ri';
+import ScrollToTop from "./components/ScrollToTop";
+import Styled from "./App.styled";
+import { NavLink, useLocation } from "react-router-dom";
+import { Suspense, useEffect, useRef, useState } from "react";
+import { MdArrowUpward, MdMenuOpen } from "react-icons/md";
+import { TbSunMoon } from "react-icons/tb";
+import { IoNotificationsCircleSharp } from "react-icons/io5";
+import { CiSettings } from "react-icons/ci";
+import { RiAccountPinCircleFill } from "react-icons/ri";
+import { Box, CircularProgress } from "@mui/material";
+import Footer from "./components/footer";
+import NavList from "./components/navList";
+import AppRoutes from "./AppRoutes";
 import Breadcrumbs from "./components/Breadcrumbs";
-// --- Simple placeholder for design-only routes (replace with real pages later) ---
-const Placeholder = ({ title }) => (
-    <div className="pagePlaceholder">
-        <h2>{title}</h2>
-        <p>
-            This is a design-only placeholder page for <b>{title}</b>. Replace with the real component when ready.
-        </p>
-    </div>
-);
 
-// --- Theme handling ---
-const THEME_KEY = 'theme'; // 'dark' | 'light'
+const THEME_KEY = "theme";
+
 const getInitialTheme = () => {
     try {
         const saved = localStorage.getItem(THEME_KEY);
-        if (saved === 'light' || saved === 'dark') return saved;
-    } catch { }
-    // fall back to OS preference
-    if (typeof window !== 'undefined' && window.matchMedia) {
-        return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        if (saved === "light" || saved === "dark") return saved;
+    } catch {
+        return "dark";
     }
-    return 'dark';
+
+    if (typeof window !== "undefined" && window.matchMedia) {
+        return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+    }
+
+    return "dark";
 };
 
 const App = () => {
+    const { pathname } = useLocation();
     const [displayNav, setDisplayNav] = useState(true);
-    const handleDisplayNav = () => setDisplayNav(prev => !prev);
-
-    // ↑ Scroll-to-top state + ref
     const contentRef = useRef(null);
     const [showScrollTop, setShowScrollTop] = useState(false);
-
-    // Theme state
     const [theme, setTheme] = useState(getInitialTheme);
 
     useEffect(() => {
-        const el = contentRef.current;
-        if (!el) return;
-        const onScroll = () => setShowScrollTop(el.scrollTop > 100);
+        const element = contentRef.current;
+        if (!element) return undefined;
+
+        const onScroll = () => setShowScrollTop(element.scrollTop > 100);
         onScroll();
-        el.addEventListener('scroll', onScroll);
-        return () => el.removeEventListener('scroll', onScroll);
+        element.addEventListener("scroll", onScroll);
+
+        return () => element.removeEventListener("scroll", onScroll);
     }, []);
 
-    // Apply theme on html[data-theme]
     useEffect(() => {
-        const root = document.documentElement;
-        root.setAttribute('data-theme', theme);
-        try { localStorage.setItem(THEME_KEY, theme); } catch { }
+        document.documentElement.setAttribute("data-theme", theme);
+        try {
+            localStorage.setItem(THEME_KEY, theme);
+        } catch {
+            return undefined;
+        }
+        return undefined;
     }, [theme]);
 
-    const toggleTheme = () => setTheme(t => (t === 'light' ? 'dark' : 'light'));
+    const toggleTheme = () => {
+        setTheme((current) => (current === "light" ? "dark" : "light"));
+    };
 
     const scrollToTop = () => {
-        contentRef.current?.scrollTo({ top: 0, behavior: 'smooth' });
+        contentRef.current?.scrollTo({ top: 0, behavior: "smooth" });
     };
 
     return (
         <Styled.Wrapper>
             <Styled.Header>
-                <Styled.LogoLinkWrapper>
-                    <Styled.NavLinkWrapper onClick={handleDisplayNav} title="Toggle Navigation">
+                <Styled.LogoLinkWrapper className="routes-theme-header">
+                    <Styled.NavLinkWrapper
+                        as="button"
+                        type="button"
+                        onClick={() => setDisplayNav((current) => !current)}
+                        title="Toggle navigation"
+                        aria-label="Toggle navigation"
+                        aria-expanded={displayNav}
+                    >
                         <MdMenuOpen size={20} />
                     </Styled.NavLinkWrapper>
-                    <NavLink to="/" title="React Routes Theme">React Routes Theme</NavLink>
+                    <NavLink to="/" title="React Routes Theme">
+                        <img src={import.meta.env.BASE_URL + "logo.png"} alt="Ashish Ranjan logo" />
+                        <span>React Routes Theme</span>
+                    </NavLink>
                 </Styled.LogoLinkWrapper>
 
                 <Styled.Heading>
                     <div
                         className="themeToggle"
-                        title={`Switch to ${theme === 'light' ? 'Dark' : 'Light'} theme`}
+                        title={"Switch to " + (theme === "light" ? "dark" : "light") + " theme"}
                         role="button"
-                        aria-pressed={theme === 'light' ? 'true' : 'false'}
+                        tabIndex={0}
+                        aria-pressed={theme === "light"}
                         onClick={toggleTheme}
+                        onKeyDown={(event) => {
+                            if (event.key === "Enter" || event.key === " ") {
+                                event.preventDefault();
+                                toggleTheme();
+                            }
+                        }}
                     >
                         <TbSunMoon />
                     </div>
@@ -96,7 +109,7 @@ const App = () => {
                     <NavLink to="/settings" className="settings" title="Settings" aria-label="Settings">
                         <CiSettings />
                     </NavLink>
-                    <NavLink to="/me" className="user" title="My Profile" aria-label="My Profile">
+                    <NavLink to="/me" className="user" title="My profile" aria-label="My profile">
                         <RiAccountPinCircleFill />
                     </NavLink>
                 </Styled.Heading>
@@ -113,11 +126,9 @@ const App = () => {
                     <Styled.RoutesWrapper>
                         <Breadcrumbs />
                         <Suspense
+                            key={pathname}
                             fallback={
-                                <Box sx={{
-                                    width: '100%', height: '200px',
-                                    display: 'flex', alignItems: 'center', justifyContent: 'center'
-                                }}>
+                                <Box sx={{ width: "100%", height: "200px", display: "flex", alignItems: "center", justifyContent: "center" }}>
                                     <CircularProgress />
                                 </Box>
                             }

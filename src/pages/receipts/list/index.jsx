@@ -256,7 +256,7 @@ const ReceiptsList = () => {
                 <div className="right actions">
                     <button
                         className="btnGhost"
-                        title="Demo — create is disabled"
+                        title="Demo - create is disabled"
                         disabled={DEMO_MODE}
                         aria-disabled={DEMO_MODE}
                     >
@@ -409,10 +409,10 @@ const ReceiptsList = () => {
 
             {/* Printable: summary + compact table */}
             <Styled.PrintArea id="search-print-area" ref={printRef}>
-                <h2>Receipts — Summary</h2>
+                <h2>Receipts - Summary</h2>
                 <div className="grid">
                     <div><div className="k">Generated</div><div className="v">{fmtDateTime(new Date())}</div></div>
-                    <div><div className="k">Filters</div><div className="v">q: {q || "—"}, status: {status}, method: {method}</div></div>
+                    <div><div className="k">Filters</div><div className="v">q: {q || "-"}, status: {status}, method: {method}</div></div>
                     <div><div className="k">Total</div><div className="v">{FIXED_SUMMARY.totalReceipts}</div></div>
                     <div><div className="k">Today</div><div className="v">{FIXED_SUMMARY.today}</div></div>
                 </div>

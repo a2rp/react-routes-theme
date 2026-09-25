@@ -287,7 +287,7 @@ export default function PrescriptionsList() {
                                             {row.items.map(it => (
                                                 <li key={it.id}>
                                                     <Link to={`/medicines/${it.id}`} className="pill">{it.name}</Link>
-                                                    <span className="muted"> — {it.dose} × {it.days}d</span>
+                                                    <span className="muted"> - {it.dose} × {it.days}d</span>
                                                 </li>
                                             ))}
                                         </ul>

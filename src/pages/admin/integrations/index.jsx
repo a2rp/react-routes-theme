@@ -99,7 +99,7 @@ const AdminIntegrations = () => {
             <S.PageHead>
                 <div className="title">
                     <h1>Integrations</h1>
-                    <p>Connect payments, messaging, storage, and automation services. Display-only demo—safe to explore.</p>
+                    <p>Connect payments, messaging, storage, and automation services. Display-only demo-safe to explore.</p>
                 </div>
                 <div className="meta">
                     <div className="row">

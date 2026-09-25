@@ -183,7 +183,7 @@ const ExampleTheme = () => {
                                         <tr key={k}>
                                             <td><code>{k}</code></td>
                                             <td className="valueCell"><code>{val}</code></td>
-                                            <td>{showSwatch ? <span className="swatch" style={{ background: val }} /> : <span className="swatch none">—</span>}</td>
+                                            <td>{showSwatch ? <span className="swatch" style={{ background: val }} /> : <span className="swatch none">-</span>}</td>
                                         </tr>
                                     );
                                 })}

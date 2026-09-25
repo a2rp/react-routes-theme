@@ -445,7 +445,7 @@ export default function AppointmentsList() {
                                     </td>
                                     <td>
                                         <div className="tags">
-                                            {a.tags.length === 0 ? <span className="muted">—</span> :
+                                            {a.tags.length === 0 ? <span className="muted">-</span> :
                                                 a.tags.map(t => <span key={t} className="tag">{t}</span>)}
                                         </div>
                                     </td>

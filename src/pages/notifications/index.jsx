@@ -254,7 +254,7 @@ export default function NotificationsPage() {
                         <MdNotificationsActive className="leadIcon" />
                         <div className="titles">
                             <h1>Notifications</h1>
-                            <p className="sub">Stay on top of orders, billing, inventory, and system events—display-only demo.</p>
+                            <p className="sub">Stay on top of orders, billing, inventory, and system events-display-only demo.</p>
                         </div>
                     </div>
 

@@ -58,7 +58,7 @@ const ExamplesOverview = () => {
             <Styled.Header className="card">
                 <div className="left">
                     <h1>Examples Overview</h1>
-                    <p className="sub">A curated grid of demo screens—fast to browse, easy to deep-link. Display-only, zero-risk.</p>
+                    <p className="sub">A curated grid of demo screens-fast to browse, easy to deep-link. Display-only, zero-risk.</p>
                     <div className="meta">
                         <span>Generated: {fmt(now, true)}</span>
                     </div>
@@ -106,7 +106,7 @@ const ExamplesOverview = () => {
                 <section className="card section" id="search-print-area" ref={printRef}>
                     <header>
                         <h2>Navigation Patterns</h2>
-                        <p className="hint">Breadcrumbs, sidebar search, and counters—pure display, deep-link friendly.</p>
+                        <p className="hint">Breadcrumbs, sidebar search, and counters-pure display, deep-link friendly.</p>
                     </header>
                     <div className="tiles">
                         <NavLink to="/examples/breadcrumbs" className="tile">
@@ -126,7 +126,7 @@ const ExamplesOverview = () => {
 
                         <NavLink to="/examples/persist-theme" className="tile">
                             <div className="title">Persist Theme</div>
-                            <div className="desc">Theme tokens preview—no local storage writes.</div>
+                            <div className="desc">Theme tokens preview-no local storage writes.</div>
                         </NavLink>
                     </div>
 
@@ -166,7 +166,7 @@ const ExamplesOverview = () => {
 
                         <NavLink to="/examples/confirm-modal" className="tile">
                             <div className="title">Confirm Modal</div>
-                            <div className="desc">Custom overlay—no browser alerts.</div>
+                            <div className="desc">Custom overlay-no browser alerts.</div>
                         </NavLink>
                     </div>
                 </section>
@@ -185,7 +185,7 @@ const ExamplesOverview = () => {
 
                         <NavLink to="/roadmap" className="tile sm">
                             <div className="title">Roadmap</div>
-                            <div className="desc">What’s next—display-only.</div>
+                            <div className="desc">What’s next-display-only.</div>
                         </NavLink>
 
                         <NavLink to="/help" className="tile sm">

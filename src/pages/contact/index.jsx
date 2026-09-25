@@ -160,7 +160,7 @@ const Contact = () => {
             {/* Main content (printable) */}
             <div id={PRINT_TARGET_ID}>
                 <Styled.Grid>
-                    {/* Left column — Offices & Channels */}
+                    {/* Left column - Offices & Channels */}
                     <Styled.Card>
                         <h2>Offices & Channels</h2>
                         <p className="muted">Reach us via phone or email. Office hours vary by location.</p>
@@ -215,7 +215,7 @@ const Contact = () => {
                         </div>
                     </Styled.Card>
 
-                    {/* Right column — Quick routes */}
+                    {/* Right column - Quick routes */}
                     <Styled.Card>
                         <h2>Quick Routes</h2>
                         <p className="muted">Navigate across frequently used sections. These are deep links for demo navigation.</p>
@@ -292,7 +292,7 @@ const Contact = () => {
                         </div>
                     </Styled.Card>
 
-                    {/* Full-width card — People */}
+                    {/* Full-width card - People */}
                     <Styled.Card className="span2">
                         <h2>Key Contacts</h2>
                         <p className="muted">Connect directly with the right team. Actions are display-only.</p>
@@ -323,7 +323,7 @@ const Contact = () => {
                         </div>
                     </Styled.Card>
 
-                    {/* Full-width card — Message (display-only) */}
+                    {/* Full-width card - Message (display-only) */}
                     <Styled.Card className="span2">
                         <h2>Send a Message</h2>
                         <p className="muted">This is a display-only theme. The form is intentionally disabled.</p>

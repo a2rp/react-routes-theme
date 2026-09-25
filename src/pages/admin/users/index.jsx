@@ -90,13 +90,13 @@ const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const MOS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 function fmtDate(iso) {
-    if (!iso) return "—";
+    if (!iso) return "-";
     const d = new Date(iso);
     const dd = d.getDate().toString().padStart(2, "0");
     return `${DAYS[d.getDay()]} ${MOS[d.getMonth()]} ${dd} ${d.getFullYear()}`;
 }
 function fmtDateTime(iso) {
-    if (!iso) return "—";
+    if (!iso) return "-";
     const d = new Date(iso);
     const dd = d.getDate().toString().padStart(2, "0");
     const hh = d.getHours().toString().padStart(2, "0");
@@ -105,7 +105,7 @@ function fmtDateTime(iso) {
     return `${DAYS[d.getDay()]} ${MOS[d.getMonth()]} ${dd} ${d.getFullYear()} ${hh}:${mm}:${ss}hrs`;
 }
 function fmtTime(iso) {
-    if (!iso) return "—";
+    if (!iso) return "-";
     const d = new Date(iso);
     const hh = d.getHours().toString().padStart(2, "0");
     const mm = d.getMinutes().toString().padStart(2, "0");
@@ -352,7 +352,7 @@ export default function AdminUsersPage() {
                                 <td>
                                     <span className={`pill ${u.status.toLowerCase()}`}>{u.status}</span>
                                 </td>
-                                <td>{u.lastActiveISO ? fmtDateTime(u.lastActiveISO) : "—"}</td>
+                                <td>{u.lastActiveISO ? fmtDateTime(u.lastActiveISO) : "-"}</td>
                                 <td>{fmtDate(u.createdISO)}</td>
                                 <td>
                                     <div className="rowActions">

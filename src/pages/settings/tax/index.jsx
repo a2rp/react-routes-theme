@@ -24,7 +24,7 @@ const TAX_RATES = [
     { id: "TAX-SGST-9", name: "SGST 9%", kind: "SGST", rate: "9%", jurisdiction: "India", effectiveFrom: "2024-04-01T00:00:00+05:30", status: "Active", updatedAt: "2025-09-28T10:18:30+05:30" },
     { id: "TAX-IGST-18", name: "IGST 18%", kind: "IGST", rate: "18%", jurisdiction: "Interstate (India)", effectiveFrom: "2024-04-01T00:00:00+05:30", status: "Active", updatedAt: "2025-09-28T10:18:30+05:30" },
     { id: "TAX-ZERO", name: "Zero Rated (0%)", kind: "GST", rate: "0%", jurisdiction: "India", effectiveFrom: "2024-04-01T00:00:00+05:30", status: "Active", updatedAt: "2025-05-01T12:00:00+05:30" },
-    { id: "TAX-EXEMPT", name: "Exempt (N/A)", kind: "GST", rate: "—", jurisdiction: "India", effectiveFrom: "2024-04-01T00:00:00+05:30", status: "Active", updatedAt: "2025-05-01T12:00:00+05:30" },
+    { id: "TAX-EXEMPT", name: "Exempt (N/A)", kind: "GST", rate: "-", jurisdiction: "India", effectiveFrom: "2024-04-01T00:00:00+05:30", status: "Active", updatedAt: "2025-05-01T12:00:00+05:30" },
     { id: "TAX-CESS-12", name: "Compensation Cess 12%", kind: "Cess", rate: "12%", jurisdiction: "India", effectiveFrom: "2024-04-01T00:00:00+05:30", status: "Inactive", updatedAt: "2025-03-15T09:35:20+05:30" },
 ];
 

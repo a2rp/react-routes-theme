@@ -432,7 +432,7 @@ export default function ImagingList() {
                                                 <div className="tm">{fmtTime(s.reportedAt)}</div>
                                             </>
                                         ) : (
-                                            <span className="muted">—</span>
+                                            <span className="muted">-</span>
                                         )}
                                     </td>
                                     <td>

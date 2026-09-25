@@ -354,11 +354,11 @@ const ExampleForm = () => {
                             <div className="card sub" id="search-print-area" ref={printRef}>
                                 <h3>Print Summary</h3>
                                 <div className="printSummary">
-                                    <div className="line"><span className="k">Name</span><span className="v">{fullName || "—"}</span></div>
-                                    <div className="line"><span className="k">Email</span><span className="v">{model.email || "—"}</span></div>
-                                    <div className="line"><span className="k">Phone</span><span className="v">{model.phone || "—"}</span></div>
+                                    <div className="line"><span className="k">Name</span><span className="v">{fullName || "-"}</span></div>
+                                    <div className="line"><span className="k">Email</span><span className="v">{model.email || "-"}</span></div>
+                                    <div className="line"><span className="k">Phone</span><span className="v">{model.phone || "-"}</span></div>
                                     <div className="line"><span className="k">Type</span><span className="v">{model.accountType}</span></div>
-                                    <div className="line"><span className="k">Country</span><span className="v">{model.country || "—"}</span></div>
+                                    <div className="line"><span className="k">Country</span><span className="v">{model.country || "-"}</span></div>
                                     <div className="line"><span className="k">Time Zone</span><span className="v">{model.tz}</span></div>
                                     <div className="line"><span className="k">DOB</span><span className="v">{fmt(model.dob)}</span></div>
                                     <div className="line"><span className="k">Meeting</span><span className="v">{fmt(new Date(model.meetingAt), true)}</span></div>

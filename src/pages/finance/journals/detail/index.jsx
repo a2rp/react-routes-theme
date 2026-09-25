@@ -6,7 +6,7 @@ import { Styled } from "./styled";
 /** Demo-only helpers */
 const DEMO_MODE = true;
 
-/** Date formatting — exact spec:
+/** Date formatting - exact spec:
  * Date: Sat Oct 04 2025
  * Date+Time: Sat Oct 04 2025 15:38:20hrs
  * Time: 15:38:20hrs
@@ -290,8 +290,8 @@ export default function JournalDetailPage() {
                                 </div>
                                 <div className="sig">
                                     <div className="k">Approved by</div>
-                                    <div className="v muted">—</div>
-                                    <div className="muted">—</div>
+                                    <div className="v muted">-</div>
+                                    <div className="muted">-</div>
                                 </div>
                             </div>
                         </>
@@ -304,17 +304,17 @@ export default function JournalDetailPage() {
                         <h3>Details</h3>
                         <div className="grid2">
                             <div><span className="k">Journal ID</span><span className="v mono">{journalId}</span></div>
-                            <div><span className="k">Reference</span><span className="v mono">{data?.refNo || "—"}</span></div>
+                            <div><span className="k">Reference</span><span className="v mono">{data?.refNo || "-"}</span></div>
                             <div><span className="k">Status</span><span className="v"><StatusPill status={data?.status || "Draft"} /></span></div>
-                            <div><span className="k">Date</span><span className="v">{data ? fmtDate(data.date) : "—"}</span></div>
+                            <div><span className="k">Date</span><span className="v">{data ? fmtDate(data.date) : "-"}</span></div>
                         </div>
                         <div className="row">
                             <span className="k">Created</span>
-                            <span className="v">{data ? `${fmtDateTime(data.createdAt)} · ${data.createdBy.name}` : "—"}</span>
+                            <span className="v">{data ? `${fmtDateTime(data.createdAt)} · ${data.createdBy.name}` : "-"}</span>
                         </div>
                         <div className="row">
                             <span className="k">Posted</span>
-                            <span className="v">{data ? `${fmtDateTime(data.postedAt)} · ${data.postedBy.name}` : "—"}</span>
+                            <span className="v">{data ? `${fmtDateTime(data.postedAt)} · ${data.postedBy.name}` : "-"}</span>
                         </div>
                     </section>
 

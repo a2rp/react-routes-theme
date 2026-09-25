@@ -66,7 +66,7 @@ const SettingsProfilePage = () => {
         timezone: "Asia/Kolkata",
         language: "English (India)",
         location: "Patna, Bihar, India",
-        org: { company: "Arohan Labs Pvt. Ltd.", department: "Engineering", manager: "—" },
+        org: { company: "Arohan Labs Pvt. Ltd.", department: "Engineering", manager: "-" },
         // Use build/commit if defined by Vite, else fallback
         memberSince: (typeof __APP_COMMIT_ISO__ !== "undefined" ? __APP_COMMIT_ISO__ : new Date().toISOString()),
         lastActive: (typeof __APP_BUILD_ISO__ !== "undefined" ? __APP_BUILD_ISO__ : new Date().toISOString()),

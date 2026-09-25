@@ -43,7 +43,7 @@ const SettingsNotifications = () => {
                     <button
                         className="btn primary"
                         disabled={DEMO_MODE}
-                        title={DEMO_MODE ? "Demo only — disabled" : "Save settings"}
+                        title={DEMO_MODE ? "Demo only - disabled" : "Save settings"}
                     >
                         Save Changes
                     </button>

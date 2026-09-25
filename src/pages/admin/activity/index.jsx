@@ -45,7 +45,7 @@ const downloadJSON = (filename, obj) => {
 /* Build a safe base (works with Vite base + GH Pages) */
 const BASE = (import.meta?.env?.BASE_URL || "/").replace(/\/+$/, "");
 
-/* Demo data — pre-specified activity (display-only) */
+/* Demo data - pre-specified activity (display-only) */
 const ACTIVITY = [
     {
         id: "ACT-9001",
@@ -121,7 +121,7 @@ const ACTIVITY = [
         actor: { id: "SYS", name: "System", link: "/admin/system-status" },
         target: { kind: "system", id: "APP", name: "System Status", link: "/admin/system-status" },
         message: "All services nominal.",
-        meta: { ip: "127.0.0.1", ua: "Health/1.0", location: "—" },
+        meta: { ip: "127.0.0.1", ua: "Health/1.0", location: "-" },
         links: [{ label: "System Status", to: "/admin/system-status" }],
     },
     {

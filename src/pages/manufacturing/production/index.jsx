@@ -391,7 +391,7 @@ export default function ProductionPage() {
                 {/* SCHEDULE */}
                 <section id="schedule" className="card">
                     <header className="section-header">
-                        <h2>Schedule — {fmtDate(demo.buildISO)}</h2>
+                        <h2>Schedule - {fmtDate(demo.buildISO)}</h2>
                         <div className="section-actions">
                             <button title="Reschedule (disabled)" disabled>Auto-Reschedule</button>
                         </div>

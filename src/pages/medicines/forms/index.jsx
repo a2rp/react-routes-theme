@@ -13,7 +13,7 @@ const fmt = (d, withTime) => {
     return `${base} ${pad(dd.getHours())}:${pad(dd.getMinutes())}:${pad(dd.getSeconds())}hrs`;
 };
 
-/* display-only seed — dosage forms */
+/* display-only seed - dosage forms */
 const TOTAL_FORMS = 20;
 const FORMS = [
     { id: "FORM-001", name: "Tablet", abbrev: "Tab", route: "Oral", category: "Solid", examples: ["Paracetamol 500", "Cefixime 200"], commonUse: "General prescriptions", updatedAt: "2025-10-04T13:25:10Z" },

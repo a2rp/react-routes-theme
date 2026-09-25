@@ -411,8 +411,8 @@ const CategoriesList = () => {
 
             {/* Footer meta (optional) */}
             <Styled.Footnote className="muted">
-                <div>Build: {typeof __APP_BUILD_ISO__ !== "undefined" ? fmt(__APP_BUILD_ISO__, true) : "—"}</div>
-                <div>Commit: {typeof __APP_COMMIT_ISO__ !== "undefined" ? fmt(__APP_COMMIT_ISO__, true) : "—"}</div>
+                <div>Build: {typeof __APP_BUILD_ISO__ !== "undefined" ? fmt(__APP_BUILD_ISO__, true) : "-"}</div>
+                <div>Commit: {typeof __APP_COMMIT_ISO__ !== "undefined" ? fmt(__APP_COMMIT_ISO__, true) : "-"}</div>
             </Styled.Footnote>
         </Styled.Page>
     );

@@ -57,7 +57,7 @@ const items = [
     },
     {
         id: "RM-102",
-        title: "Customers detail page — activity timeline & print area",
+        title: "Customers detail page - activity timeline & print area",
         area: "UX",
         lane: "now",
         date: "2025-10-03T16:45:00+05:30",

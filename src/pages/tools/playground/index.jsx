@@ -62,7 +62,7 @@ const ToolsPlayground = () => {
             <Styled.HeaderBar>
                 <div className="lhs">
                     <h1>Playground</h1>
-                    <p className="sub">Quick access to demos, deep links, and utilities — tuned for display-only theme.</p>
+                    <p className="sub">Quick access to demos, deep links, and utilities - tuned for display-only theme.</p>
                 </div>
 
                 <div className="rhs">
@@ -335,7 +335,7 @@ const ToolsPlayground = () => {
                         <div className="divider" />
                         <div className="row">
                             <div className="col wide">
-                                <p>This section showcases the exact print behavior. Use the “Print Section” action above — the page will switch to print-only mode for this block and revert automatically after printing.</p>
+                                <p>This section showcases the exact print behavior. Use the “Print Section” action above - the page will switch to print-only mode for this block and revert automatically after printing.</p>
                             </div>
                         </div>
                     </div>
@@ -359,9 +359,9 @@ const ToolsPlayground = () => {
                         <span className="note">Discoverability</span>
                     </div>
                     <ul className="bullets">
-                        <li><kbd>Ctrl</kbd> + <kbd>K</kbd> — sidebar search focus</li>
-                        <li><kbd>Enter</kbd>/<kbd>Space</kbd> — toggle a sidebar section</li>
-                        <li>Tab/Shift+Tab — keyboard navigation across actions</li>
+                        <li><kbd>Ctrl</kbd> + <kbd>K</kbd> - sidebar search focus</li>
+                        <li><kbd>Enter</kbd>/<kbd>Space</kbd> - toggle a sidebar section</li>
+                        <li>Tab/Shift+Tab - keyboard navigation across actions</li>
                     </ul>
                 </Styled.Card>
 

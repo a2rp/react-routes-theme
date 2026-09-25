@@ -228,7 +228,7 @@ const Batches = () => {
 
             <Styled.Header className="card">
                 <div className="lhs">
-                    <h1>Inventory — Batches</h1>
+                    <h1>Inventory - Batches</h1>
                     <nav className="breadcrumbs" aria-label="Breadcrumb">
                         <NavLink to="/inventory" end>Inventory</NavLink>
                         <span>/</span>
@@ -387,7 +387,7 @@ const Batches = () => {
                 {/* printable summary on the right */}
                 <aside className="side">
                     <div className="card" id="search-print-area" ref={printRef}>
-                        <h3 className="sideTitle">Print Summary — Batches</h3>
+                        <h3 className="sideTitle">Print Summary - Batches</h3>
                         <div className="printBlock">
                             <div className="line"><span className="k">Printed</span><span className="v">{fmt(new Date(), true)}</span></div>
                             <div className="line"><span className="k">Total Batches</span><span className="v">{stats.total}</span></div>
@@ -395,7 +395,7 @@ const Batches = () => {
                             <div className="line"><span className="k">Expired</span><span className="v">{stats.expired}</span></div>
                             <div className="line"><span className="k">Total Quantity</span><span className="v">{stats.qty}</span></div>
                             <div className="line"><span className="k">Quick Filter</span><span className="v">{quick}</span></div>
-                            <div className="line"><span className="k">Search</span><span className="v">{query || "—"}</span></div>
+                            <div className="line"><span className="k">Search</span><span className="v">{query || "-"}</span></div>
                         </div>
                     </div>
 
@@ -415,7 +415,7 @@ const Batches = () => {
                 <Styled.Overlay role="dialog" aria-modal="true" onMouseDown={() => setLabelFor(null)}>
                     <Styled.Modal className="card" onMouseDown={(e) => e.stopPropagation()}>
                         <header>
-                            <h4>Label Preview — {labelFor.id}</h4>
+                            <h4>Label Preview - {labelFor.id}</h4>
                         </header>
                         <div className="body">
                             <div className="labelWrap" id="label-print-area">

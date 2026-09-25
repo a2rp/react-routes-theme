@@ -352,7 +352,7 @@ const AttributesPage = () => {
                                         <td className="optionsCell">
                                             {a.options && a.options.length
                                                 ? a.options.slice(0, 4).map(o => <span className="chip opt" key={o}>{o}</span>)
-                                                : <span className="muted">—</span>}
+                                                : <span className="muted">-</span>}
                                             {a.options && a.options.length > 4 ? <span className="more">+{a.options.length - 4}</span> : null}
                                         </td>
                                         <td>
@@ -474,7 +474,7 @@ const AttributesPage = () => {
   "updated": "2025-10-04T09:40:03+05:30"
 }`}
                         </pre>
-                        <div className="muted small">This is illustrative—data here is static for the demo.</div>
+                        <div className="muted small">This is illustrative-data here is static for the demo.</div>
                     </div>
                 </aside>
             </Styled.Layout>

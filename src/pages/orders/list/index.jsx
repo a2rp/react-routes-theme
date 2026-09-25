@@ -254,7 +254,7 @@ const OrdersList = () => {
 
             {/* print-friendly area */}
             <Styled.PrintCard className="card" id="search-print-area" ref={printRef}>
-                <h3>Orders — Summary</h3>
+                <h3>Orders - Summary</h3>
                 <div className="grid">
                     <div><span className="k">Generated</span><span className="v">{fmtDateTime(new Date())}</span></div>
                     <div><span className="k">Total Orders</span><span className="v">{summary.total}</span></div>

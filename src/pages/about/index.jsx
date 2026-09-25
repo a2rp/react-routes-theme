@@ -53,7 +53,7 @@ const About = () => {
                         </p>
                         <ul>
                             <li><strong>Explicit routes, lazy pages:</strong> predictable links, fast splits, and zero surprise edges.</li>
-                            <li><strong>Sidebar from your paths:</strong> collapsible, searchable, and keyboard-friendly—no duplicate config.</li>
+                            <li><strong>Sidebar from your paths:</strong> collapsible, searchable, and keyboard-friendly-no duplicate config.</li>
                             <li><strong>Breadcrumbs that mirror URLs:</strong> tidy context with sensible fallbacks.</li>
                             <li><strong>Display-only safety:</strong> fixtures for data, deep links for detail pages, and demo-gated write actions.</li>
                             <li><strong>Built-ins that matter:</strong> a small custom confirm modal and section-only print for clean PDFs.</li>
@@ -65,13 +65,13 @@ const About = () => {
                             <strong>What you won’t fight</strong>
                         </p>
                         <ul>
-                            <li>No heavy UI framework to unlearn—just sensible defaults.</li>
-                            <li>No backend wiring for demos—fixtures keep it deterministic.</li>
-                            <li>No alerts or browser prompts—only custom, styled dialogs.</li>
+                            <li>No heavy UI framework to unlearn-just sensible defaults.</li>
+                            <li>No backend wiring for demos-fixtures keep it deterministic.</li>
+                            <li>No alerts or browser prompts-only custom, styled dialogs.</li>
                         </ul>
 
                         <p>
-                            Built with Vite, React Router, and styled-components, the kit stays fast in dev and lean in prod. When you’re ready to go beyond demos, swap the fixtures for a repository that talks to your API—your routes and UI stay put.
+                            Built with Vite, React Router, and styled-components, the kit stays fast in dev and lean in prod. When you’re ready to go beyond demos, swap the fixtures for a repository that talks to your API-your routes and UI stay put.
                         </p>
 
                     </div>

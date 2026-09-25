@@ -269,7 +269,7 @@ export default function SettingsUnitsPage() {
                                                 {u.usedIn.includes("inventory") && <NavLink to="/inventory">Inventory</NavLink>}
                                                 {u.usedIn.includes("medicines") && <NavLink to="/medicines">Medicines</NavLink>}
                                             </>
-                                        ) : <span className="muted">—</span>}
+                                        ) : <span className="muted">-</span>}
                                     </td>
                                     <td className="row-actions">
                                         <button className="btn-ghost" disabled data-tooltip="Demo only">

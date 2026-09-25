@@ -73,7 +73,7 @@ function formatTime(iso) {
     return `${hh}:${mm}:${ss}hrs`;
 }
 
-const DEMO_DISABLED_TITLE = "Demo only — action disabled";
+const DEMO_DISABLED_TITLE = "Demo only - action disabled";
 
 const TaxesPage = () => {
     const navigate = useNavigate();
@@ -300,7 +300,7 @@ const TaxesPage = () => {
                                             <td>{r.type}</td>
                                             <td>{r.rate}</td>
                                             <td>{r.effectiveFrom ? formatDate(r.effectiveFrom) : ""}</td>
-                                            <td>{r.effectiveTo ? formatDate(r.effectiveTo) : "—"}</td>
+                                            <td>{r.effectiveTo ? formatDate(r.effectiveTo) : "-"}</td>
                                             <td><span className={`pill ${r.status.toLowerCase()}`}>{r.status}</span></td>
                                             <td className="go">
                                                 <Link to="/reports/gst" className="chipLink">Report</Link>
@@ -333,7 +333,7 @@ const TaxesPage = () => {
                                     </div>
                                     <div className="body">
                                         <div className="row"><span>Period</span><strong>{r.period}</strong></div>
-                                        <div className="row"><span>Filed On</span><strong>{r.filedOnISO ? formatDateTime(r.filedOnISO) : "—"}</strong></div>
+                                        <div className="row"><span>Filed On</span><strong>{r.filedOnISO ? formatDateTime(r.filedOnISO) : "-"}</strong></div>
                                     </div>
                                     <div className="foot">
                                         <Link to="/finance/gst-returns" className="linkBtn">Open</Link>

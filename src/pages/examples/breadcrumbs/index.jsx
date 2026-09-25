@@ -85,7 +85,7 @@ const ExampleBreadcrumbsPage = () => {
             setCopied(true);
             setTimeout(() => setCopied(false), 2000);
         } catch {
-            // no alerts—just a subtle banner fallback
+            // no alerts-just a subtle banner fallback
             setCopied(true);
             setTimeout(() => setCopied(false), 2000);
         }
@@ -121,7 +121,7 @@ const ExampleBreadcrumbsPage = () => {
     }, [crumbs]);
 
     useEffect(() => {
-        // nothing heavy—just page title polish
+        // nothing heavy-just page title polish
         document.title = "Breadcrumbs · Examples";
     }, []);
 
@@ -254,7 +254,7 @@ const ExampleBreadcrumbsPage = () => {
                 <section className="card">
                     <header className="sectionHead">
                         <h3>Crumb Menu</h3>
-                        <div className="hint">Intermediate segment can expose quick picks—handy for switching siblings.</div>
+                        <div className="hint">Intermediate segment can expose quick picks-handy for switching siblings.</div>
                     </header>
                     <div className="demoRow">
                         <nav aria-label="Breadcrumb" className="menuCrumbs">

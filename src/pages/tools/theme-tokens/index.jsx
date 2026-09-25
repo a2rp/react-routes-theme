@@ -98,7 +98,7 @@ export default function ToolsThemeTokensPage() {
                     <div className="titles">
                         <h1>Theme Tokens</h1>
                         <p className="sub">
-                            Visual foundation of the UI — colors, border, card surfaces, shadows and focus rings.
+                            Visual foundation of the UI - colors, border, card surfaces, shadows and focus rings.
                             Quick-compare dark/light, copy variables, and see live component previews.
                         </p>
                     </div>

@@ -234,7 +234,7 @@ const NotFound = () => {
                         </div>
                         <div className="row">
                             <div className="k">Referrer</div>
-                            <div className="v">{document.referrer || "—"}</div>
+                            <div className="v">{document.referrer || "-"}</div>
                         </div>
                     </div>
                     <div className="foot">

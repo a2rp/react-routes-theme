@@ -40,7 +40,7 @@ function fmtTime(iso) {
     }).format(d) + "hrs";
 }
 
-const DEMO_DISABLED_MSG = "Demo only — actions are disabled.";
+const DEMO_DISABLED_MSG = "Demo only - actions are disabled.";
 
 const FIXTURE_LABS = [
     {
@@ -110,7 +110,7 @@ const FIXTURE_LABS = [
         collectedAt: "2025-10-04T14:22:34+05:30",
         verifiedAt: null,
         total: "₹ 0.00",
-        clinician: "—",
+        clinician: "-",
         priority: "Routine",
     },
     {
@@ -271,7 +271,7 @@ function LabsListPage() {
     };
 
     useEffect(() => {
-        document.title = "Labs — Orders";
+        document.title = "Labs - Orders";
     }, []);
 
     return (
@@ -433,7 +433,7 @@ function LabsListPage() {
                                                     {r.verifiedAt ? (
                                                         <span>Verified: {fmtDateTime(r.verifiedAt)}</span>
                                                     ) : (
-                                                        <span>—</span>
+                                                        <span>-</span>
                                                     )}
                                                 </div>
                                             </div>

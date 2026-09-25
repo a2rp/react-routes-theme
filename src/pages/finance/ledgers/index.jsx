@@ -168,7 +168,7 @@ const LedgersList = () => {
                         <span className="current">Ledgers</span>
                     </nav>
                     <div className="meta">
-                        <span>Period: {fmt(new Date(LEDGER_SUMMARY.periodFrom))} — {fmt(new Date(LEDGER_SUMMARY.periodTo))}</span>
+                        <span>Period: {fmt(new Date(LEDGER_SUMMARY.periodFrom))} - {fmt(new Date(LEDGER_SUMMARY.periodTo))}</span>
                         <span>•</span>
                         <span>Prepared: {fmt(LEDGER_SUMMARY.preparedAt, true)}</span>
                     </div>

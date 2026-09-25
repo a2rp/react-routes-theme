@@ -105,7 +105,7 @@ const ExamplePersistTheme = () => {
             await navigator.clipboard.writeText(link);
             setBanner("Share URL copied");
         } catch {
-            setBanner("Copy failed — select and copy manually");
+            setBanner("Copy failed - select and copy manually");
         }
     };
 
@@ -126,7 +126,7 @@ const ExamplePersistTheme = () => {
             await navigator.clipboard.writeText(block);
             setBanner("Current CSS variables copied");
         } catch {
-            setBanner("Copy failed — select and copy manually");
+            setBanner("Copy failed - select and copy manually");
         }
     };
 
@@ -172,7 +172,7 @@ const ExamplePersistTheme = () => {
 
             <header className="card head">
                 <div>
-                    <h1>Theme — Appearance & Persistence (Demo)</h1>
+                    <h1>Theme - Appearance & Persistence (Demo)</h1>
                     <p className="muted">
                         Tweak live tokens below. Nothing is stored. Use the shareable URL or copy the CSS variables for your app.
                     </p>

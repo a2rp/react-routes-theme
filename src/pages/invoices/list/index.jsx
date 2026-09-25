@@ -27,16 +27,16 @@ const DATA = [
     { id: "INV-2032", customer: "Nova Health Pvt Ltd", customerId: "CUST-1012", date: "2025-10-03T16:11:02+05:30", due: "2025-10-17T23:59:59+05:30", status: "Overdue", amountText: "₹ 42,300.00", balanceText: "₹ 3,200.00", currency: "INR", po: "PO-7720" },
     { id: "INV-2033", customer: "Urban Mart", customerId: "CUST-1024", date: "2025-10-02T12:02:09+05:30", due: "2025-10-09T23:59:59+05:30", status: "Partially Paid", amountText: "₹ 9,990.00", balanceText: "₹ 2,000.00", currency: "INR", po: "PO-7709" },
     { id: "INV-2034", customer: "Pinnacle Labs", customerId: "CUST-1031", date: "2025-10-01T18:45:41+05:30", due: "2025-10-15T23:59:59+05:30", status: "Paid", amountText: "₹ 75,000.00", balanceText: "₹ 0.00", currency: "INR", po: "PO-7715" },
-    { id: "INV-2035", customer: "Skyline Retail", customerId: "CUST-1045", date: "2025-09-30T09:13:21+05:30", due: "2025-10-14T23:59:59+05:30", status: "Draft", amountText: "₹ 5,450.00", balanceText: "₹ 5,450.00", currency: "INR", po: "—" },
+    { id: "INV-2035", customer: "Skyline Retail", customerId: "CUST-1045", date: "2025-09-30T09:13:21+05:30", due: "2025-10-14T23:59:59+05:30", status: "Draft", amountText: "₹ 5,450.00", balanceText: "₹ 5,450.00", currency: "INR", po: "-" },
     { id: "INV-2036", customer: "Apex Surgical", customerId: "CUST-1049", date: "2025-09-29T13:00:02+05:30", due: "2025-10-13T23:59:59+05:30", status: "Paid", amountText: "₹ 21,300.00", balanceText: "₹ 0.00", currency: "INR", po: "PO-7722" },
-    { id: "INV-2037", customer: "Orion Pharma", customerId: "CUST-1054", date: "2025-09-28T15:08:36+05:30", due: "2025-10-12T23:59:59+05:30", status: "Cancelled", amountText: "₹ 0.00", balanceText: "₹ 0.00", currency: "INR", po: "—" },
+    { id: "INV-2037", customer: "Orion Pharma", customerId: "CUST-1054", date: "2025-09-28T15:08:36+05:30", due: "2025-10-12T23:59:59+05:30", status: "Cancelled", amountText: "₹ 0.00", balanceText: "₹ 0.00", currency: "INR", po: "-" },
     { id: "INV-2038", customer: "Zenith Clinics", customerId: "CUST-1060", date: "2025-09-27T11:04:10+05:30", due: "2025-10-11T23:59:59+05:30", status: "Paid", amountText: "₹ 13,280.00", balanceText: "₹ 0.00", currency: "INR", po: "PO-7699" },
-    { id: "INV-2039", customer: "Northwind Stores", customerId: "CUST-1065", date: "2025-09-26T10:22:03+05:30", due: "2025-10-10T23:59:59+05:30", status: "Overdue", amountText: "₹ 3,120.00", balanceText: "₹ 3,120.00", currency: "INR", po: "—" },
+    { id: "INV-2039", customer: "Northwind Stores", customerId: "CUST-1065", date: "2025-09-26T10:22:03+05:30", due: "2025-10-10T23:59:59+05:30", status: "Overdue", amountText: "₹ 3,120.00", balanceText: "₹ 3,120.00", currency: "INR", po: "-" },
     { id: "INV-2040", customer: "Everest Diagnostics", customerId: "CUST-1069", date: "2025-09-25T19:05:50+05:30", due: "2025-10-09T23:59:59+05:30", status: "Paid", amountText: "₹ 56,400.00", balanceText: "₹ 0.00", currency: "INR", po: "PO-7688" },
     { id: "INV-2041", customer: "Metro Care", customerId: "CUST-1072", date: "2025-09-24T08:18:19+05:30", due: "2025-10-08T23:59:59+05:30", status: "Partially Paid", amountText: "₹ 12,000.00", balanceText: "₹ 4,500.00", currency: "INR", po: "PO-7683" },
-    { id: "INV-2042", customer: "Trident Enterprises", customerId: "CUST-1081", date: "2025-09-23T10:42:41+05:30", due: "2025-10-07T23:59:59+05:30", status: "Paid", amountText: "₹ 7,840.00", balanceText: "₹ 0.00", currency: "INR", po: "—" },
+    { id: "INV-2042", customer: "Trident Enterprises", customerId: "CUST-1081", date: "2025-09-23T10:42:41+05:30", due: "2025-10-07T23:59:59+05:30", status: "Paid", amountText: "₹ 7,840.00", balanceText: "₹ 0.00", currency: "INR", po: "-" },
     { id: "INV-2043", customer: "Sapphire Wholesale", customerId: "CUST-1085", date: "2025-09-22T14:31:55+05:30", due: "2025-10-06T23:59:59+05:30", status: "Paid", amountText: "₹ 28,000.00", balanceText: "₹ 0.00", currency: "INR", po: "PO-7668" },
-    { id: "INV-2044", customer: "Nimbus Partners", customerId: "CUST-1090", date: "2025-09-21T16:49:27+05:30", due: "2025-10-05T23:59:59+05:30", status: "Draft", amountText: "₹ 2,200.00", balanceText: "₹ 2,200.00", currency: "INR", po: "—" },
+    { id: "INV-2044", customer: "Nimbus Partners", customerId: "CUST-1090", date: "2025-09-21T16:49:27+05:30", due: "2025-10-05T23:59:59+05:30", status: "Draft", amountText: "₹ 2,200.00", balanceText: "₹ 2,200.00", currency: "INR", po: "-" },
     { id: "INV-2045", customer: "Regal Medicals", customerId: "CUST-1093", date: "2025-09-20T09:55:31+05:30", due: "2025-10-04T23:59:59+05:30", status: "Paid", amountText: "₹ 33,120.00", balanceText: "₹ 0.00", currency: "INR", po: "PO-7659" },
 ];
 
@@ -305,7 +305,7 @@ const InvoicesList = () => {
 
             {/* PRINT AREA */}
             <Styled.PrintCard className="card" id="search-print-area" ref={printRef}>
-                <h3>Invoices — Print Summary</h3>
+                <h3>Invoices - Print Summary</h3>
                 <div className="meta">
                     Generated: {fmtDateTime(new Date())}
                 </div>

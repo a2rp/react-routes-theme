@@ -32,7 +32,7 @@ const fmt = {
 const FIX_FLAGS = [
     {
         key: "checkout_new_ui",
-        name: "Checkout — New UI",
+        name: "Checkout - New UI",
         owner: "Platform",
         tags: ["ui", "checkout", "experiment"],
         updatedAt: "2025-10-04T15:38:20+05:30",
@@ -46,12 +46,12 @@ const FIX_FLAGS = [
         links: [
             { label: "Dashboard", to: "/dashboard" },
             { label: "Orders", to: "/orders" },
-            { label: "Reports — Sales", to: "/reports/sales" },
+            { label: "Reports - Sales", to: "/reports/sales" },
         ],
     },
     {
         key: "rx_batch_expiry_banner",
-        name: "RX — Batch Expiry Banner",
+        name: "RX - Batch Expiry Banner",
         owner: "Pharmacy",
         tags: ["rx", "compliance", "expiry"],
         updatedAt: "2025-10-04T11:22:01+05:30",
@@ -63,14 +63,14 @@ const FIX_FLAGS = [
             development: { state: "on", rollout: 100 },
         },
         links: [
-            { label: "Inventory — Lots", to: "/inventory/lots" },
-            { label: "Medicines — Expiry Tracker", to: "/medicines/expiry-tracker" },
-            { label: "Reports — Inventory", to: "/reports/inventory" },
+            { label: "Inventory - Lots", to: "/inventory/lots" },
+            { label: "Medicines - Expiry Tracker", to: "/medicines/expiry-tracker" },
+            { label: "Reports - Inventory", to: "/reports/inventory" },
         ],
     },
     {
         key: "reports_async_export",
-        name: "Reports — Async Export",
+        name: "Reports - Async Export",
         owner: "Reporting",
         tags: ["reports", "export", "queue"],
         updatedAt: "2025-10-04T09:05:55+05:30",
@@ -82,14 +82,14 @@ const FIX_FLAGS = [
             development: { state: "on", rollout: 100 },
         },
         links: [
-            { label: "Reports — Overview", to: "/reports" },
+            { label: "Reports - Overview", to: "/reports" },
             { label: "Notifications", to: "/notifications" },
-            { label: "Admin — System Status", to: "/admin/system-status" },
+            { label: "Admin - System Status", to: "/admin/system-status" },
         ],
     },
     {
         key: "inventory_fast_search",
-        name: "Inventory — Fast Search",
+        name: "Inventory - Fast Search",
         owner: "Supply Chain",
         tags: ["inventory", "search"],
         updatedAt: "2025-10-03T19:40:08+05:30",
@@ -101,14 +101,14 @@ const FIX_FLAGS = [
             development: { state: "on", rollout: 100 },
         },
         links: [
-            { label: "Inventory — Overview", to: "/inventory" },
+            { label: "Inventory - Overview", to: "/inventory" },
             { label: "Products", to: "/products" },
-            { label: "Tools — Playground", to: "/tools/playground" },
+            { label: "Tools - Playground", to: "/tools/playground" },
         ],
     },
     {
         key: "gst_rounding_fix",
-        name: "Finance — GST Rounding Fix",
+        name: "Finance - GST Rounding Fix",
         owner: "Finance",
         tags: ["finance", "gst", "compliance"],
         updatedAt: "2025-10-02T14:10:11+05:30",
@@ -121,13 +121,13 @@ const FIX_FLAGS = [
         },
         links: [
             { label: "Invoices", to: "/invoices" },
-            { label: "Finance — GST Returns", to: "/finance/gst-returns" },
-            { label: "Reports — GST", to: "/reports/gst" },
+            { label: "Finance - GST Returns", to: "/finance/gst-returns" },
+            { label: "Reports - GST", to: "/reports/gst" },
         ],
     },
     {
         key: "patients_kiosk_mode",
-        name: "Patients — Kiosk Mode",
+        name: "Patients - Kiosk Mode",
         owner: "Clinic",
         tags: ["patients", "ux", "kiosk"],
         updatedAt: "2025-10-01T09:00:00+05:30",
@@ -140,8 +140,8 @@ const FIX_FLAGS = [
         },
         links: [
             { label: "Patients", to: "/patients" },
-            { label: "Appointments — Calendar", to: "/appointments/calendar" },
-            { label: "Settings — Appearance", to: "/settings/appearance" },
+            { label: "Appointments - Calendar", to: "/appointments/calendar" },
+            { label: "Settings - Appearance", to: "/settings/appearance" },
         ],
     },
 ];

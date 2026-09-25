@@ -321,9 +321,9 @@ const StrengthsPage = () => {
 
                 <div className="right actions">
                     <button className="btnGhost" onClick={printSection} title="Print this list">Print</button>
-                    <button className="btnDisabled" title="Demo only — adding is disabled">Add Strength</button>
-                    <button className="btnDisabled" title="Demo only — import is disabled">Import</button>
-                    <button className="btnDisabled" title="Demo only — export is disabled">Export</button>
+                    <button className="btnDisabled" title="Demo only - adding is disabled">Add Strength</button>
+                    <button className="btnDisabled" title="Demo only - import is disabled">Import</button>
+                    <button className="btnDisabled" title="Demo only - export is disabled">Export</button>
                 </div>
             </Styled.Header>
 
@@ -493,7 +493,7 @@ const StrengthsPage = () => {
                         <h3>Demo Mode</h3>
                         <p>
                             This catalog is display-only. Actions like Add, Import, Export are intentionally disabled here.
-                            Deep links still work—open any molecule and share the link.
+                            Deep links still work-open any molecule and share the link.
                         </p>
                     </div>
 

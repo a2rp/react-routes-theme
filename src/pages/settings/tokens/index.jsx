@@ -3,7 +3,7 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import { Styled } from "./styled";
 import { FiCopy, FiPrinter, FiRefreshCw, FiX, FiExternalLink, FiDownload, FiShield, FiLock, FiLink, FiKey } from "react-icons/fi";
 
-/** Demo fixtures — display-only (preformatted dates per convention) */
+/** Demo fixtures - display-only (preformatted dates per convention) */
 const TOKENS = [
     {
         id: "TKN-9001",
@@ -15,7 +15,7 @@ const TOKENS = [
         environment: "Production",
         created: "Sat Oct 04 2025 09:12:36hrs",
         lastUsed: "Sat Oct 04 2025 15:38:20hrs",
-        expires: "—",
+        expires: "-",
         status: "Active",
     },
     {
@@ -28,7 +28,7 @@ const TOKENS = [
         environment: "Production",
         created: "Fri Oct 03 2025 14:03:09hrs",
         lastUsed: "Sat Oct 04 2025 12:18:02hrs",
-        expires: "—",
+        expires: "-",
         status: "Active",
     },
     {
@@ -54,7 +54,7 @@ const TOKENS = [
         environment: "Production",
         created: "Mon Sep 15 2025 10:05:12hrs",
         lastUsed: "Mon Sep 22 2025 19:42:09hrs",
-        expires: "—",
+        expires: "-",
         status: "Revoked",
     },
     {
@@ -67,7 +67,7 @@ const TOKENS = [
         environment: "Sandbox",
         created: "Wed Oct 01 2025 08:20:00hrs",
         lastUsed: "Sat Oct 04 2025 08:21:10hrs",
-        expires: "—",
+        expires: "-",
         status: "Active",
     },
 ];
@@ -146,7 +146,7 @@ export default function SettingsTokensPage() {
 
     return (
         <Styled.Page>
-            {/* Print CSS — section-only */}
+            {/* Print CSS - section-only */}
             <style>{`
         @media print {
           :root { print-color-adjust: exact; -webkit-print-color-adjust: exact; }

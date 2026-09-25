@@ -311,7 +311,7 @@ const ExampleGallery = () => {
 
             {/* PRINT CONTACT SHEET (hidden during normal view) */}
             <Styled.PrintWrap id="search-print-area" ref={printRef}>
-                <h2>Contact Sheet — Gallery</h2>
+                <h2>Contact Sheet - Gallery</h2>
                 <div className="meta">
                     Generated: {fmtDateTime(new Date())}
                     <span className="dot">•</span>

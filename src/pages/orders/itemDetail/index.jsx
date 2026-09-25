@@ -342,7 +342,7 @@ const OrderItemDetail = () => {
                             {model.shipments.map(s => (
                                 <li key={s.id}>
                                     <NavLink to={`/shipments/${s.id}`}>{s.id}</NavLink>
-                                    <span className="muted"> — {s.status} · {fmt(s.date, true)}</span>
+                                    <span className="muted"> - {s.status} · {fmt(s.date, true)}</span>
                                 </li>
                             ))}
                         </ul>

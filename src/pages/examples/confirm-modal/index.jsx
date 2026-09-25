@@ -243,7 +243,7 @@ const ExampleConfirmModal = () => {
 
                 <section className="card">
                     <h3>Danger (Delete)</h3>
-                    <p className="muted">Destructive action with a red emphasis. Demo-only — no actual delete.</p>
+                    <p className="muted">Destructive action with a red emphasis. Demo-only - no actual delete.</p>
                     <div className="btnRow">
                         <button
                             className="btnDanger"
@@ -334,7 +334,7 @@ const ExampleConfirmModal = () => {
                 open={modals.delete}
                 variant="danger"
                 title="Delete Customer?"
-                message="This action cannot be undone. In demo mode, nothing will be deleted — this is for UI showcase."
+                message="This action cannot be undone. In demo mode, nothing will be deleted - this is for UI showcase."
                 confirmText="Delete"
                 onClose={() => setModals((m) => ({ ...m, delete: false }))}
                 onConfirm={() => {
@@ -354,7 +354,7 @@ const ExampleConfirmModal = () => {
                 onClose={() => setModals((m) => ({ ...m, cancelOrder: false }))}
                 onConfirm={(reason) => {
                     setModals((m) => ({ ...m, cancelOrder: false }));
-                    pushLog("Order cancelled", `ORD-3001 — ${reason || "No reason"}`);
+                    pushLog("Order cancelled", `ORD-3001 - ${reason || "No reason"}`);
                 }}
             />
 

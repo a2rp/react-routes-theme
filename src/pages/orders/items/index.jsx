@@ -44,12 +44,12 @@ const OrderItems = () => {
     const items = useMemo(() => ([
         { line: 1, id: "ITEM-01", sku: "MED-AMOX-500", name: "Amoxicillin 500mg Capsule", batch: "B-AX-23-091", expiry: "2026-02-28", qty: "20", uom: "Strip", price: "₹120.00", tax: "12%", discount: "₹0.00", amount: "₹2,400.00", status: "Packed", notes: "Keep dry" },
         { line: 2, id: "ITEM-02", sku: "MED-PARA-650", name: "Paracetamol 650mg Tablet", batch: "P-650-24-005", expiry: "2027-01-15", qty: "50", uom: "Strip", price: "₹32.00", tax: "5%", discount: "₹50.00", amount: "₹1,550.00", status: "Pending", notes: "Gift pack promo" },
-        { line: 3, id: "ITEM-03", sku: "MED-ALB-200", name: "Albendazole 200mg", batch: "ALB-0924-77", expiry: "2026-09-30", qty: "120", uom: "Tab", price: "₹4.50", tax: "12%", discount: "₹0.00", amount: "₹540.00", status: "Packed", notes: "—" },
+        { line: 3, id: "ITEM-03", sku: "MED-ALB-200", name: "Albendazole 200mg", batch: "ALB-0924-77", expiry: "2026-09-30", qty: "120", uom: "Tab", price: "₹4.50", tax: "12%", discount: "₹0.00", amount: "₹540.00", status: "Packed", notes: "-" },
         { line: 4, id: "ITEM-04", sku: "MED-RABE-20", name: "Rabeprazole 20mg", batch: "RBZ-24-221", expiry: "2027-03-31", qty: "80", uom: "Tab", price: "₹7.80", tax: "12%", discount: "₹0.00", amount: "₹624.00", status: "Backorder", notes: "ETA next week" },
         { line: 5, id: "ITEM-05", sku: "MED-AZT-500", name: "Azithromycin 500mg", batch: "AZT-23-199", expiry: "2026-12-31", qty: "60", uom: "Tab", price: "₹21.00", tax: "12%", discount: "₹150.00", amount: "₹1,110.00", status: "Packed", notes: "Lot check" },
         { line: 6, id: "ITEM-06", sku: "MED-VITC-1G", name: "Vitamin C 1000mg", batch: "VTC-25-014", expiry: "2027-05-31", qty: "40", uom: "Bottle", price: "₹199.00", tax: "12%", discount: "₹0.00", amount: "₹7,960.00", status: "Pending", notes: "Batch QC pending" },
         { line: 7, id: "ITEM-07", sku: "MED-ORS-21", name: "ORS Sachet", batch: "ORS-9925", expiry: "2026-07-31", qty: "100", uom: "Sachet", price: "₹18.00", tax: "5%", discount: "₹0.00", amount: "₹1,800.00", status: "Cancelled", notes: "Customer request" },
-        { line: 8, id: "ITEM-08", sku: "MED-ZINC-50", name: "Zinc 50mg", batch: "ZNC-24-08", expiry: "2026-04-30", qty: "90", uom: "Tab", price: "₹6.80", tax: "12%", discount: "₹0.00", amount: "₹612.00", status: "Packed", notes: "—" },
+        { line: 8, id: "ITEM-08", sku: "MED-ZINC-50", name: "Zinc 50mg", batch: "ZNC-24-08", expiry: "2026-04-30", qty: "90", uom: "Tab", price: "₹6.80", tax: "12%", discount: "₹0.00", amount: "₹612.00", status: "Packed", notes: "-" },
         { line: 9, id: "ITEM-09", sku: "MED-IBU-400", name: "Ibuprofen 400mg", batch: "IBU-24-55", expiry: "2026-11-30", qty: "70", uom: "Tab", price: "₹10.50", tax: "12%", discount: "₹0.00", amount: "₹735.00", status: "Shipped", notes: "From WH-2" },
     ]), []);
 

@@ -394,7 +394,7 @@ const AdminPermissionsPage = () => {
                     {/* Legend */}
                     <div className="legend">
                         <span className="badge ok">✓ allowed</span>
-                        <span className="badge no">— not allowed</span>
+                        <span className="badge no">- not allowed</span>
                         <span className="sep" />
                         <span className="hint">Hover module name for route. Click “Open” to navigate.</span>
                     </div>
@@ -424,7 +424,7 @@ const AdminPermissionsPage = () => {
                                             const allow = matrix?.[m.key]?.[a] ?? false;
                                             return (
                                                 <td key={a} className={allow ? "allow" : "deny"}>
-                                                    {allow ? "✓" : "—"}
+                                                    {allow ? "✓" : "-"}
                                                 </td>
                                             );
                                         })}

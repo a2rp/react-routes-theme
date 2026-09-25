@@ -313,7 +313,7 @@ const TransfersPage = () => {
                                         <td>
                                             <div className="idcell">
                                                 <strong>{row.id}</strong>
-                                                <div className="muted">{row.ref || "—"}</div>
+                                                <div className="muted">{row.ref || "-"}</div>
                                             </div>
                                         </td>
                                         <td>{fmt(row.createdAt, true)}</td>
@@ -364,7 +364,7 @@ const TransfersPage = () => {
                                 <div><div className="label">Items</div><div>{selected.itemCount}</div></div>
                                 <div><div className="label">ETA</div><div>{fmt(selected.eta)}</div></div>
                                 <div><div className="label">Last Update</div><div>{fmt(selected.lastUpdate, true)}</div></div>
-                                <div><div className="label">Reference</div><div>{selected.ref || "—"}</div></div>
+                                <div><div className="label">Reference</div><div>{selected.ref || "-"}</div></div>
                             </div>
 
                             <div className="card sub">

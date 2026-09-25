@@ -247,7 +247,7 @@ export default function PrescriptionDetail() {
                             <h4>Patient</h4>
                             <p className="title">
                                 <Link to={`/patients/${rx.patient.id}`}>{rx.patient.name}</Link>
-                                <span className="muted"> — {rx.patient.sex}, {rx.patient.age}</span>
+                                <span className="muted"> - {rx.patient.sex}, {rx.patient.age}</span>
                             </p>
                             <p>{rx.patient.phone} · {rx.patient.email}</p>
                             <p className="muted">

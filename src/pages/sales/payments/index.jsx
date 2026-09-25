@@ -92,7 +92,7 @@ const PAYMENTS = [
         currency: "INR",
         status: "failed",
         invoices: ["INV-2017"],
-        notes: "Cheque returned — signature mismatch.",
+        notes: "Cheque returned - signature mismatch.",
     },
     {
         id: "PAY-90226",
@@ -380,7 +380,7 @@ const SalesPaymentsList = () => {
             {/* Printable summary (list context) */}
             <Styled.PrintCard className="card" id="search-print-area" ref={printRef}>
                 <header>
-                    <h3>Payments — Summary</h3>
+                    <h3>Payments - Summary</h3>
                     <div className="meta">{fmt(new Date(), true)}</div>
                 </header>
                 <div className="grid">

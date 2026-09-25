@@ -2,7 +2,7 @@ import React, { useMemo, useRef, useState } from "react";
 import { NavLink, useParams, useNavigate } from "react-router-dom";
 import { Styled } from "./styled";
 
-/* date helpers — single source so formatting stays consistent */
+/* date helpers - single source so formatting stays consistent */
 const pad = (n) => String(n).padStart(2, "0");
 const dnames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const mnames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];

@@ -152,7 +152,7 @@ const ExampleSubscribeSelector = () => {
     const now = useMemo(() => new Date(), []);
     const reset = useCounterStore((s) => s.reset);
 
-    // subscribe to a slice (A) — fires only when A changes
+    // subscribe to a slice (A) - fires only when A changes
     useEffect(() => {
         const unsubA = useCounterStore.subscribe(
             (s) => s.counterA,

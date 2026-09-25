@@ -330,10 +330,10 @@ const AdminUserDetailPage = () => {
                             {user.permissionsSummary.map((p) => (
                                 <tr key={p.group}>
                                     <td><NavLink to="/admin/permissions">{p.group}</NavLink></td>
-                                    <td>{p.read ? "Yes" : "—"}</td>
-                                    <td>{p.write ? "Yes" : "—"}</td>
-                                    <td>{p.approve ? "Yes" : "—"}</td>
-                                    <td>{p.export ? "Yes" : "—"}</td>
+                                    <td>{p.read ? "Yes" : "-"}</td>
+                                    <td>{p.write ? "Yes" : "-"}</td>
+                                    <td>{p.approve ? "Yes" : "-"}</td>
+                                    <td>{p.export ? "Yes" : "-"}</td>
                                 </tr>
                             ))}
                         </tbody>

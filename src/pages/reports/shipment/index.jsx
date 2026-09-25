@@ -152,7 +152,7 @@ export default function ReportShipment() {
                 <S.HeaderMeta>
                     <div className="title">
                         <h1>Shipment Performance</h1>
-                        <p>Period: Sat Oct 04 2025 — Sun Oct 05 2025 • Timezone: Asia/Kolkata</p>
+                        <p>Period: Sat Oct 04 2025 - Sun Oct 05 2025 • Timezone: Asia/Kolkata</p>
                     </div>
                     <ul className="meta">
                         <li><span>Generated</span><strong>{generatedOn}</strong></li>

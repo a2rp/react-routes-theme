@@ -119,7 +119,7 @@ const Home = () => {
                     </div>
 
                     <p className="lead">
-                        Polished, display-only ERP frontend theme. No writes, no surprises — just premium UX,
+                        Polished, display-only ERP frontend theme. No writes, no surprises - just premium UX,
                         deep links, and gorgeous defaults.
                     </p>
 

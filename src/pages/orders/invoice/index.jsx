@@ -333,7 +333,7 @@ const OrderInvoicePage = () => {
                                         <li key={p.id}>
                                             <div>
                                                 <div className="mono">{p.id}</div>
-                                                <div className="muted">{p.mode} • {p.ref || "—"}</div>
+                                                <div className="muted">{p.mode} • {p.ref || "-"}</div>
                                             </div>
                                             <div className="amt mono">{money(p.amount)}</div>
                                         </li>
@@ -349,7 +349,7 @@ const OrderInvoicePage = () => {
                                 <div className="hdr">Meta</div>
                                 <div className="kv"><span>Created by</span><span className="mono">{data.meta.createdBy}</span></div>
                                 <div className="kv"><span>Created at</span><span>{fmtDateTime(data.meta.createdAt)}</span></div>
-                                <div className="kv"><span>Last printed</span><span>{data.meta.lastPrintedAt ? fmtDateTime(data.meta.lastPrintedAt) : "—"}</span></div>
+                                <div className="kv"><span>Last printed</span><span>{data.meta.lastPrintedAt ? fmtDateTime(data.meta.lastPrintedAt) : "-"}</span></div>
                             </div>
                         </div>
                     </div>

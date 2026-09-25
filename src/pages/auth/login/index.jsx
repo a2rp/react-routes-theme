@@ -100,7 +100,7 @@ export default function Login() {
 
                 <div className="headline">
                     <h1>Welcome back</h1>
-                    <p>Access the unified ERP demo—fast navigation, clean typography, and consistent theming across every module.</p>
+                    <p>Access the unified ERP demo-fast navigation, clean typography, and consistent theming across every module.</p>
                 </div>
 
                 <div className="featureGrid">

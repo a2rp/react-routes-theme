@@ -165,11 +165,11 @@ const VerifyPage = () => {
                         <div className="metaGrid">
                             <div>
                                 <div className="k">Build Time</div>
-                                <div className="v">{buildISO ? fmtDateTime(new Date(buildISO)) : "—"}</div>
+                                <div className="v">{buildISO ? fmtDateTime(new Date(buildISO)) : "-"}</div>
                             </div>
                             <div>
                                 <div className="k">Last Commit</div>
-                                <div className="v">{commitISO ? fmtDateTime(new Date(commitISO)) : "—"}</div>
+                                <div className="v">{commitISO ? fmtDateTime(new Date(commitISO)) : "-"}</div>
                             </div>
                         </div>
                     </div>

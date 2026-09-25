@@ -3,7 +3,7 @@ import { Link, useParams, useLocation, useNavigate } from "react-router-dom";
 import { Styled } from "./styled";
 
 /**
- * Tiny date utils — formats must be exactly:
+ * Tiny date utils - formats must be exactly:
  * - Date: Sat Oct 04 2025
  * - Date+Time: Sat Oct 04 2025 15:38:20hrs
  * - Time: 15:38:20hrs
@@ -123,7 +123,7 @@ export default function PrintStickerPage() {
         try {
             await navigator.clipboard.writeText(url);
         } catch {
-            // no alerts—silent fallback
+            // no alerts-silent fallback
         }
     };
 

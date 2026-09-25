@@ -344,7 +344,7 @@ const ExampleNavSearch = () => {
                                         <td className="muted">{m.section}</td>
                                         <td className="muted">{m.title}</td>
                                         <td><NavLink to={m.href}>{m.href}</NavLink></td>
-                                        <td>{m.active ? "Yes" : "—"}</td>
+                                        <td>{m.active ? "Yes" : "-"}</td>
                                     </tr>
                                 ))}
                             </tbody>

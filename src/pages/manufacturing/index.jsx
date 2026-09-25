@@ -208,7 +208,7 @@ export default function ManufacturingOverview() {
                     <section className="card">
                         <header className="sectionHead">
                             <div className="title">
-                                <FiPackage /> Work Orders — Today & Upcoming
+                                <FiPackage /> Work Orders - Today & Upcoming
                             </div>
                             <div className="tools">
                                 <NavLink to="/manufacturing/work-orders" className="link">View All</NavLink>
@@ -317,7 +317,7 @@ export default function ManufacturingOverview() {
                 {/* Top BOMs */}
                 <section className="card">
                     <header className="sectionHead">
-                        <div className="title"><FiLayers /> Bill of Materials — Top Items</div>
+                        <div className="title"><FiLayers /> Bill of Materials - Top Items</div>
                         <div className="tools">
                             <NavLink to="/manufacturing/bom" className="link">View All</NavLink>
                         </div>

@@ -322,7 +322,7 @@ const SearchPage = () => {
                     <div className="card" id="search-print-area">
                         <h3>Print Summary</h3>
                         <div className="summary">
-                            <div className="line"><span className="k">Query</span><span className="v">{q || "—"}</span></div>
+                            <div className="line"><span className="k">Query</span><span className="v">{q || "-"}</span></div>
                             <div className="line"><span className="k">Generated</span><span className="v">{fmt(new Date(), true)}</span></div>
                             <div className="line"><span className="k">Entities</span>
                                 <span className="v">

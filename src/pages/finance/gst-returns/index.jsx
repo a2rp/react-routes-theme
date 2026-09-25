@@ -202,7 +202,7 @@ const GstReturns = () => {
                 {/* Accordions */}
                 <div className="accordion">
                     <button className="accHeader" onClick={() => setOpen1(v => !v)}>
-                        {open1 ? <FiChevronDown /> : <FiChevronRight />} GSTR-1 — Outward Supplies ({currentLabel})
+                        {open1 ? <FiChevronDown /> : <FiChevronRight />} GSTR-1 - Outward Supplies ({currentLabel})
                     </button>
                     {open1 && (
                         <div className="accBody">
@@ -237,7 +237,7 @@ const GstReturns = () => {
 
                 <div className="accordion">
                     <button className="accHeader" onClick={() => setOpen3b(v => !v)}>
-                        {open3b ? <FiChevronDown /> : <FiChevronRight />} GSTR-3B — Summary & Liability ({currentLabel})
+                        {open3b ? <FiChevronDown /> : <FiChevronRight />} GSTR-3B - Summary & Liability ({currentLabel})
                     </button>
                     {open3b && (
                         <div className="accBody">
@@ -270,7 +270,7 @@ const GstReturns = () => {
 
                 {/* Returns table */}
                 <div className="tableWrap">
-                    <div className="tableTitle">Returns — {currentLabel}</div>
+                    <div className="tableTitle">Returns - {currentLabel}</div>
                     <table className="table">
                         <thead>
                             <tr>

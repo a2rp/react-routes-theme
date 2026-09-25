@@ -385,7 +385,7 @@ const AdjustmentsPage = () => {
                     <div className="help">
                         <h4>What is an Adjustment?</h4>
                         <p>
-                            A record that reconciles physical stock with system quantities—triggered by cycle counts, damage, expiry,
+                            A record that reconciles physical stock with system quantities-triggered by cycle counts, damage, expiry,
                             or transfer corrections.
                         </p>
                     </div>

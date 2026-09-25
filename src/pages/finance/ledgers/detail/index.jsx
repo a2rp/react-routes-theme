@@ -55,15 +55,15 @@ const LedgerDetail = () => {
     }), []);
 
     const entries = useMemo(() => ([
-        { id: "JV-4021", dt: "2025-10-01T10:15:21+05:30", ref: "Receipt #RCPT-1188", journal: "Receipt", description: "Cash received from CUST-1001 (part payment for INV-2031)", debit: "₹ 35,000.00", credit: "—", balanceAfter: "₹ 1,60,000.00 (Dr)" },
-        { id: "JV-4022", dt: "2025-10-01T17:32:54+05:30", ref: "Payment #PMT-9042", journal: "Payment", description: "Cash deposited to bank (BOB A/c)", debit: "—", credit: "₹ 50,000.00", balanceAfter: "₹ 1,10,000.00 (Dr)" },
-        { id: "JV-4023", dt: "2025-10-02T09:02:03+05:30", ref: "Expense #EXP-7713", journal: "Expense", description: "Courier charges (Petty cash)", debit: "₹ 1,200.00", credit: "—", balanceAfter: "₹ 1,11,200.00 (Dr)" },
-        { id: "JV-4024", dt: "2025-10-02T13:48:37+05:30", ref: "Receipt #RCPT-1189", journal: "Receipt", description: "Cash received from CUST-1012", debit: "₹ 22,500.00", credit: "—", balanceAfter: "₹ 1,33,700.00 (Dr)" },
-        { id: "JV-4025", dt: "2025-10-03T11:20:10+05:30", ref: "Contra #CN-3320", journal: "Contra", description: "Cash withdrawn from bank (operational float)", debit: "₹ 50,000.00", credit: "—", balanceAfter: "₹ 1,83,700.00 (Dr)" },
-        { id: "JV-4026", dt: "2025-10-03T17:02:45+05:30", ref: "Payment #PMT-9046", journal: "Payment", description: "Advance to vendor VEND-2007", debit: "—", credit: "₹ 35,000.00", balanceAfter: "₹ 1,48,700.00 (Dr)" },
-        { id: "JV-4027", dt: "2025-10-04T09:30:18+05:30", ref: "Expense #EXP-7725", journal: "Expense", description: "Stationery and printing", debit: "₹ 2,350.00", credit: "—", balanceAfter: "₹ 1,51,050.00 (Dr)" },
-        { id: "JV-4028", dt: "2025-10-04T12:56:02+05:30", ref: "Receipt #RCPT-1191", journal: "Receipt", description: "Cash received from CUST-1020 (round-off)", debit: "₹ 650.00", credit: "—", balanceAfter: "₹ 1,51,700.00 (Dr)" },
-        { id: "JV-4029", dt: "2025-10-04T15:38:20+05:30", ref: "Payment #PMT-9051", journal: "Payment", description: "Cash paid for housekeeping", debit: "—", credit: "₹ 2,700.00", balanceAfter: "₹ 1,49,000.00 (Dr)" },
+        { id: "JV-4021", dt: "2025-10-01T10:15:21+05:30", ref: "Receipt #RCPT-1188", journal: "Receipt", description: "Cash received from CUST-1001 (part payment for INV-2031)", debit: "₹ 35,000.00", credit: "-", balanceAfter: "₹ 1,60,000.00 (Dr)" },
+        { id: "JV-4022", dt: "2025-10-01T17:32:54+05:30", ref: "Payment #PMT-9042", journal: "Payment", description: "Cash deposited to bank (BOB A/c)", debit: "-", credit: "₹ 50,000.00", balanceAfter: "₹ 1,10,000.00 (Dr)" },
+        { id: "JV-4023", dt: "2025-10-02T09:02:03+05:30", ref: "Expense #EXP-7713", journal: "Expense", description: "Courier charges (Petty cash)", debit: "₹ 1,200.00", credit: "-", balanceAfter: "₹ 1,11,200.00 (Dr)" },
+        { id: "JV-4024", dt: "2025-10-02T13:48:37+05:30", ref: "Receipt #RCPT-1189", journal: "Receipt", description: "Cash received from CUST-1012", debit: "₹ 22,500.00", credit: "-", balanceAfter: "₹ 1,33,700.00 (Dr)" },
+        { id: "JV-4025", dt: "2025-10-03T11:20:10+05:30", ref: "Contra #CN-3320", journal: "Contra", description: "Cash withdrawn from bank (operational float)", debit: "₹ 50,000.00", credit: "-", balanceAfter: "₹ 1,83,700.00 (Dr)" },
+        { id: "JV-4026", dt: "2025-10-03T17:02:45+05:30", ref: "Payment #PMT-9046", journal: "Payment", description: "Advance to vendor VEND-2007", debit: "-", credit: "₹ 35,000.00", balanceAfter: "₹ 1,48,700.00 (Dr)" },
+        { id: "JV-4027", dt: "2025-10-04T09:30:18+05:30", ref: "Expense #EXP-7725", journal: "Expense", description: "Stationery and printing", debit: "₹ 2,350.00", credit: "-", balanceAfter: "₹ 1,51,050.00 (Dr)" },
+        { id: "JV-4028", dt: "2025-10-04T12:56:02+05:30", ref: "Receipt #RCPT-1191", journal: "Receipt", description: "Cash received from CUST-1020 (round-off)", debit: "₹ 650.00", credit: "-", balanceAfter: "₹ 1,51,700.00 (Dr)" },
+        { id: "JV-4029", dt: "2025-10-04T15:38:20+05:30", ref: "Payment #PMT-9051", journal: "Payment", description: "Cash paid for housekeeping", debit: "-", credit: "₹ 2,700.00", balanceAfter: "₹ 1,49,000.00 (Dr)" },
     ]), []);
 
     const [demoDialog, setDemoDialog] = useState("");
@@ -149,7 +149,7 @@ const LedgerDetail = () => {
                 <div className="item">
                     <div className="k">Period</div>
                     <div className="v">{periodSummary.periodLabel}</div>
-                    <div className="s">{fmtDate(periodSummary.periodFrom)} — {fmtDate(periodSummary.periodTo)}</div>
+                    <div className="s">{fmtDate(periodSummary.periodFrom)} - {fmtDate(periodSummary.periodTo)}</div>
                 </div>
                 <div className="item">
                     <div className="k">B/F</div>
@@ -266,7 +266,7 @@ const LedgerDetail = () => {
                         <div className="kv">
                             <div><span className="k">Code</span><span className="v">{account.code}</span></div>
                             <div><span className="k">Type</span><span className="v">{account.type}</span></div>
-                            <div><span className="k">Parent</span><span className="v">{account.parent.code} — {account.parent.name}</span></div>
+                            <div><span className="k">Parent</span><span className="v">{account.parent.code} - {account.parent.name}</span></div>
                             <div><span className="k">Currency</span><span className="v">{account.currency}</span></div>
                             <div><span className="k">Tax Profile</span><span className="v">{account.taxProfile}</span></div>
                             <div><span className="k">Opening Balance</span><span className="v">{account.openingBalance}</span></div>

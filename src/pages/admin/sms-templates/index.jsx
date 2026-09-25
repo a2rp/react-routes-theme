@@ -350,7 +350,7 @@ const AdminSmsTemplates = () => {
                                     <td title={fmtDateTime(row.lastUpdated)}>{fmtDate(row.lastUpdated)}</td>
                                     <td>
                                         <div className="usage">{row.usage.last30d.toLocaleString()}</div>
-                                        <div className="muted">{row.usage.lastSentAt ? fmtDateTime(row.usage.lastSentAt) : "—"}</div>
+                                        <div className="muted">{row.usage.lastSentAt ? fmtDateTime(row.usage.lastSentAt) : "-"}</div>
                                     </td>
                                     <td className="rowActions" onClick={(e) => e.stopPropagation()}>
                                         <NavLink className="icon" to={`/admin/sms-templates/${row.id}`} title="View"><FiEye /></NavLink>
@@ -426,7 +426,7 @@ const AdminSmsTemplates = () => {
                                 </div>
                                 <div>
                                     <div className="label">Last Sent</div>
-                                    <div className="value">{selected.usage.lastSentAt ? fmtDateTime(selected.usage.lastSentAt) : "—"}</div>
+                                    <div className="value">{selected.usage.lastSentAt ? fmtDateTime(selected.usage.lastSentAt) : "-"}</div>
                                 </div>
                             </S.MetaGrid>
 

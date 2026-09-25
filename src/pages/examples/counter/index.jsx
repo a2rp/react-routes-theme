@@ -271,8 +271,8 @@ const ExampleCounterPage = () => {
                     <div className="card">
                         <h3>Shortcuts</h3>
                         <ul className="shortcuts">
-                            <li><code>+</code> / <code>-</code> — increment/decrement active panel</li>
-                            <li><code>0</code> — Reset all (asks confirmation)</li>
+                            <li><code>+</code> / <code>-</code> - increment/decrement active panel</li>
+                            <li><code>0</code> - Reset all (asks confirmation)</li>
                             <li>Click a card to make it active</li>
                         </ul>
                     </div>

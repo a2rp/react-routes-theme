@@ -46,7 +46,7 @@ const ReportProcurement = () => {
     const { pathname } = useLocation();
     const [showDemoModal, setShowDemoModal] = useState(false);
 
-    // demo, display-only—static data for a premium feel
+    // demo, display-only-static data for a premium feel
     const asOfISO =
         typeof __APP_COMMIT_ISO__ !== "undefined"
             ? __APP_COMMIT_ISO__
@@ -243,7 +243,7 @@ const ReportProcurement = () => {
                 <SectionHead id="po">
                     <div>
                         <h2>Purchase Orders</h2>
-                        <p>Track open, partial, and closed POs—navigate into details with deep links.</p>
+                        <p>Track open, partial, and closed POs-navigate into details with deep links.</p>
                     </div>
                     <div className="head-links">
                         <NavLink to="/purchase-orders/new" title="Create PO (demo disabled)">New PO</NavLink>
@@ -352,7 +352,7 @@ const ReportProcurement = () => {
                 <SectionHead id="spend">
                     <div>
                         <h2>Spend by Category</h2>
-                        <p>Where your money goes—navigate into category-specific views.</p>
+                        <p>Where your money goes-navigate into category-specific views.</p>
                     </div>
                     <div className="head-links">
                         <NavLink to="/finance" title="Finance">Finance</NavLink>
@@ -392,8 +392,8 @@ const ReportProcurement = () => {
                     <Card>
                         <h3 className="card-title">Near Expiry Lots</h3>
                         <List>
-                            <li><span>MED-AMOX-500</span><em>Batch A13 — <NavLink to="/medicines/expiry-tracker">Nov 2025</NavLink></em></li>
-                            <li><span>MED-PAR-650</span><em>Batch P22 — <NavLink to="/medicines/expiry-tracker">Dec 2025</NavLink></em></li>
+                            <li><span>MED-AMOX-500</span><em>Batch A13 - <NavLink to="/medicines/expiry-tracker">Nov 2025</NavLink></em></li>
+                            <li><span>MED-PAR-650</span><em>Batch P22 - <NavLink to="/medicines/expiry-tracker">Dec 2025</NavLink></em></li>
                         </List>
                         <Note>Review reorder against shelf life to avoid write-offs.</Note>
                     </Card>

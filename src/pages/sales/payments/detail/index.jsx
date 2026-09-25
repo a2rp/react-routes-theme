@@ -2,7 +2,7 @@ import React, { useMemo, useRef, useState } from "react";
 import { NavLink, useLocation, useNavigate, useParams } from "react-router-dom";
 import { Styled } from "./styled";
 
-// date utils — single source of truth for formatting
+// date utils - single source of truth for formatting
 const fmt = (d, withTime) => {
     const dd = d instanceof Date ? d : new Date(d);
     const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -183,7 +183,7 @@ const SalesPaymentDetail = () => {
                         <div className="summaryItem">
                             <div className="label">Method</div>
                             <div className="value">{model.method}</div>
-                            <div className="sub">Ref: {model.reference.upiRef || model.reference.utr || "—"}</div>
+                            <div className="sub">Ref: {model.reference.upiRef || model.reference.utr || "-"}</div>
                         </div>
                         <div className="summaryItem">
                             <div className="label">Status</div>
@@ -216,10 +216,10 @@ const SalesPaymentDetail = () => {
                             </div>
                             <div className="panel">
                                 <dl className="kv">
-                                    <div><dt>UTR / Ref</dt><dd>{model.reference.utr || "—"}</dd></div>
-                                    <div><dt>UPI Ref</dt><dd>{model.reference.upiRef || "—"}</dd></div>
-                                    <div><dt>Bank</dt><dd>{model.reference.bank || "—"}</dd></div>
-                                    <div><dt>Account</dt><dd>{model.reference.account || "—"}</dd></div>
+                                    <div><dt>UTR / Ref</dt><dd>{model.reference.utr || "-"}</dd></div>
+                                    <div><dt>UPI Ref</dt><dd>{model.reference.upiRef || "-"}</dd></div>
+                                    <div><dt>Bank</dt><dd>{model.reference.bank || "-"}</dd></div>
+                                    <div><dt>Account</dt><dd>{model.reference.account || "-"}</dd></div>
                                 </dl>
                             </div>
                         </div>
@@ -262,7 +262,7 @@ const SalesPaymentDetail = () => {
                                     </tr>
                                     <tr>
                                         <td colSpan={3} className="num label">Overpayment</td>
-                                        <td className="num">—</td>
+                                        <td className="num">-</td>
                                         <td className="num">{model.currency} {model.overpayment.toLocaleString("en-IN", { minimumFractionDigits: 2 })}</td>
                                     </tr>
                                 </tfoot>
@@ -345,7 +345,7 @@ const SalesPaymentDetail = () => {
                             <div className="line"><span>Customer</span><span>{model.customer.name} ({model.customer.code})</span></div>
                             <div className="line"><span>Amount</span><span>{model.currency} {model.amount.toLocaleString("en-IN", { minimumFractionDigits: 2 })}</span></div>
                             <div className="line"><span>Method</span><span>{model.method}</span></div>
-                            <div className="line"><span>Reference</span><span>{model.reference.upiRef || model.reference.utr || "—"}</span></div>
+                            <div className="line"><span>Reference</span><span>{model.reference.upiRef || model.reference.utr || "-"}</span></div>
                             <div className="line"><span>Status</span><span className={`pill ${model.status}`}>{model.status}</span></div>
                         </div>
                     </div>
